@@ -96,7 +96,7 @@ a {
 }
 
 .second-content__navbar {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-wrap: nowrap;
   min-width: 120rem;
@@ -169,15 +169,15 @@ a {
 
 /* ===============Hero================ */
 .main .hero {
-  margin-top: 115px;
+  margin-top: calc(44px + 60px + 10px);
 }
 
-.main .advertise .carousel-inner {
+.hero__advertise .carousel-inner {
   height: 400px;
   border-radius: 32px;
 }
 
-.carousel-inner img {
+.hero__advertise .carousel-inner img {
   object-fit: cover;
 }
 /* ===============ADS================ */
