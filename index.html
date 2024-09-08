@@ -70,48 +70,57 @@
 
       <!-- Banner -->
       <div class="banner d-block d-sm-none">
-        <img src="./img/banner.png" alt="logo" />
+        <figure class="banner__img">
+          <img src="./img/banner.png" alt="logo" />
+        </figure>
       </div>
-      <!-- Second content -->
-      <div class="second-content fixed d-none d-sm-block">
-        <div class="body">
-          <nav class="navbar container">
-            <!-- logo -->
-            <img class="logo" src="./img/logo.png" alt="logo" />
+
+      <!-- Second content-->
+      <div class="second-content second-content--fixed d-none d-sm-block">
+        <div class="second-content__body">
+          <nav class="second-content__navbar container">
+            <!-- Logo -->
+            <img class="second-content__logo" src="./img/logo.png" alt="logo" />
+
             <!-- Tìm kiếm -->
-            <div class="search">
+            <div class="second-content__search">
               <input
+                class="second-content__search-input"
                 type="text"
                 placeholder="Bạn cần tìm kiếm gì?"
                 autocomplete="off"
               />
-              <button type="submit">
+              <button class="second-content__search-button" type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm
               </button>
             </div>
-            <div class="contact-cart">
+
+            <!-- Contact and Cart -->
+            <div class="second-content__contact-cart">
               <a href="https://maps.app.goo.gl/LKk9eR9o1LsUBxTz6">
                 <i class="fa-solid fa-location-dot"></i>
-                <span> Định vị cửa hàng</span>
+                <span>Định vị cửa hàng</span>
               </a>
 
               <a href="">
-                <i class="fa fa-shopping-cart"></i> <span> Giỏ hàng</span>
+                <i class="fa fa-shopping-cart"></i>
+                <span>Giỏ hàng</span>
               </a>
             </div>
           </nav>
         </div>
       </div>
 
-      <div class="banner-navbar d-block d-sm-none">
-        <div class="container">
-          <div class="search">
+      <div class="banner-navbar banner-navbar--mobile d-block d-sm-none">
+        <div class="banner-navbar__container">
+          <div class="banner-navbar__search">
             <input
+              class="banner-navbar__search-input"
               type="text"
               placeholder="Bạn cần tìm kiếm gì?"
               autocomplete="off"
             />
-            <button type="submit">
+            <button class="banner-navbar__search-button" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>

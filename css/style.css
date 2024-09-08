@@ -90,66 +90,81 @@ a {
 }
 
 /* ===============Header-NavBar================ */
-.navbar img {
+.second-content__navbar img {
   height: 40px;
   object-fit: cover;
 }
 
-.second-content .navbar {
+.second-content__navbar {
   padding: 20px;
   display: flex;
   flex-wrap: nowrap;
   min-width: 120rem;
+  justify-content: space-between;
 }
 
 .second-content {
   background-color: white;
 }
-.navbar .search {
+
+.second-content__search {
   width: 50rem;
   display: flex;
 }
 
-.search input {
+.second-content__search-input {
   width: 70%;
   padding: 5px;
   border-radius: 20px 0 0 20px;
 }
 
-.search button {
+.second-content__search-button {
   width: 30%;
   padding: 0;
   border-radius: 0 20px 20px 0;
 }
 
-.contact-cart a {
+.second-content__contact-cart a {
   margin: 5px 20px;
   font-weight: 600;
   color: #555;
 }
 
-.contact-cart i {
+.second-content__contact-cart i {
   border: 0.8px solid #555;
   padding: 5px;
   border-radius: 50%;
 }
 
-.navbar .contact-cart a:hover {
+.second-content__contact-cart a:hover {
   text-shadow: 1px 0 0 currentColor;
   text-decoration: none;
 }
 
-.banner-navbar .search {
+.banner-navbar__search {
   display: flex;
   width: 100%;
   margin-top: 10px;
 }
 
-.search input {
-  width: 70%;
+.second-content__logo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
-.search button {
+
+.banner-navbar__container {
+  margin-top: 10px;
+  border-radius: 12px;
+}
+
+.banner-navbar__search-input {
+  width: 70%;
+  border-radius: 12px 0 0 12px;
+}
+
+.banner-navbar__search-button {
   width: 30%;
+  border-radius: 0 12px 12px 0;
 }
 
 /* ===============Hero================ */
@@ -165,7 +180,6 @@ a {
 .carousel-inner img {
   object-fit: cover;
 }
-
 /* ===============ADS================ */
 .main .ads {
   margin-top: 20px;
