@@ -44,6 +44,11 @@ a {
   min-width: 1200px;
   margin: 0 auto;
 }
+
+.container {
+  width: 1170px;
+  min-width: 1170px;
+}
 /* ===============Header-Nav================ */
 .header .first-content {
   padding-top: 10px;
@@ -171,19 +176,11 @@ a {
 .main .hero {
   margin-top: calc(44px + 60px + 10px);
 }
-
-.hero__advertise .carousel-inner {
-  height: 400px;
-  border-radius: 32px;
-}
-
-.hero__advertise {
-  height: 400px;
-  border-radius: 32px;
-}
-
+.carousel-inner,
 .hero__advertise .carousel-inner img {
   object-fit: cover;
+  height: 50vh;
+  border-radius: 32px;
 }
 /* ===============ADS================ */
 .main .ads {
