@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f4ca75;
+  --second-color: red;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+}
+
+html body {
+  width: 100%;
+  height: 100%;
+}
+
+.container .content {
+  font-size: 2rem;
+}
+
+main h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 3rem;
+  color: #00c9ff;
+}
+@supports (background-clip: text) or
+  (background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%)) {
+  main h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 3rem;
+    color: transparent;
+    background-clip: text;
+    webkit-background-clip: text;
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+  }
+}
+
+.content p {
+  text-align: justify;
+  margin: 20px;
+}
+.content ul li {
+  text-align: justify;
+  margin: 0 4rem;
+}
+
+.content a {
+  text-decoration: none;
+  color: #006aff;
+}
+
+.content a:hover {
+  text-decoration: none;
+  color: #0800ff;
+  cursor: pointer;
+}
