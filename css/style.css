@@ -103,8 +103,6 @@ a {
 .second-content__navbar {
   padding: 10px;
   display: flex;
-  flex-wrap: nowrap;
-  min-width: 120rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -114,7 +112,7 @@ a {
 }
 
 .second-content__search {
-  width: 50rem;
+  width: 500px;
   display: flex;
 }
 
