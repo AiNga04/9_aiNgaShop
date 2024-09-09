@@ -119,7 +119,7 @@ a {
 
 .second-content__search-input {
   width: 70%;
-  padding: 5px 0;
+  padding: 5px 10px;
   border-radius: 20px 0 0 20px;
 }
 
@@ -127,6 +127,7 @@ a {
   width: 30%;
   padding: 0;
   border-radius: 0 20px 20px 0;
+  transform: translateX(-1px);
 }
 
 .second-content__contact-cart {
@@ -145,6 +146,7 @@ a {
   border: 0.8px solid #555;
   padding: 5px 0;
   border-radius: 50%;
+  border: none;
 }
 
 .second-content__contact-cart a:hover {
