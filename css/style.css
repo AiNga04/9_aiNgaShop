@@ -47,8 +47,9 @@ a {
 
 .container {
   width: 1170px;
+  margin: 0 auto;
+  max-width: calc(100%-48px);
   min-width: 1170px;
-  padding: 0;
 }
 /* ===============Header-Nav================ */
 .header .first-content {
@@ -199,7 +200,7 @@ a {
 }
 
 /* ===============Quist-Advertise================ */
-.quick_advertise .quick-sales {
+.quick__advertise .quick-sales {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -215,9 +216,9 @@ a {
 .quick-sales .item {
   width: 24%;
   height: 150px;
-  object-fit: cover;
   border-radius: 12px;
 }
+
 /* ===============Flash-sale================ */
 .flash-sales .top {
   display: flex;
@@ -348,7 +349,7 @@ a {
 
 /* ===============Brands-content================ */
 .brands__content {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .brands__content .list-brand {
   display: flex;
@@ -370,13 +371,13 @@ a {
   padding: 2px 4px;
 }
 
-.brands__content .container {
+.brands__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.brands__content .container p {
+.brands__content p {
   font-size: 2.8rem;
   color: #fc521d;
   padding: 10px;
@@ -388,9 +389,9 @@ a {
 .list-item {
   display: grid;
   gap: 10px;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 }
+
 .list-item .item {
   position: relative;
   width: 210px;
@@ -474,11 +475,6 @@ a {
 a:hover {
   text-decoration: none;
 }
-
-/* .container .item:hover {
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-} */
 
 /* corevalue */
 .corevalue {
