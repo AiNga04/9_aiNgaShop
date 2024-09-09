@@ -48,6 +48,7 @@ a {
 .container {
   width: 1170px;
   min-width: 1170px;
+  padding: 0;
 }
 /* ===============Header-Nav================ */
 .header .first-content {
@@ -118,7 +119,7 @@ a {
 
 .second-content__search-input {
   width: 70%;
-  padding: 5px;
+  padding: 5px 0;
   border-radius: 20px 0 0 20px;
 }
 
@@ -142,7 +143,7 @@ a {
 
 .second-content__contact-cart i {
   border: 0.8px solid #555;
-  padding: 5px;
+  padding: 5px 0;
   border-radius: 50%;
 }
 
@@ -176,7 +177,6 @@ a {
   width: 30%;
   border-radius: 0 12px 12px 0;
 }
-
 /* ===============Hero================ */
 .main .hero {
   margin-top: calc(44px + 60px + 10px);
@@ -204,15 +204,18 @@ a {
 }
 
 .quick-sales .item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
   border-radius: 12px;
 }
 
-.quick-sales .item img {
-  width: 294px;
+.quick-sales .item {
+  width: 24%;
   height: 150px;
   object-fit: cover;
+  border-radius: 12px;
 }
-
 /* ===============Flash-sale================ */
 .flash-sales .top {
   display: flex;
@@ -221,10 +224,13 @@ a {
   align-items: center;
 }
 
+.flash-sales__content {
+  background-color: #fed8bf;
+  border-radius: 16px;
+}
+
 .flash-sales .container {
   margin-top: 20px;
-  background: #fed8bf;
-  border-radius: 16px;
   height: 500px;
 }
 
@@ -340,7 +346,7 @@ a {
 
 /* ===============Brands-content================ */
 .brands_content {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .brands_content .list-brand {
   display: flex;
@@ -378,11 +384,12 @@ a {
 
 /* list-item */
 .list-item {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .list-item .item {
   position: relative;
-  display: inline-block;
   width: 210px;
   height: 380px;
   border-radius: 16px;
