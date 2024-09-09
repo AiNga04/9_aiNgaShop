@@ -92,7 +92,7 @@ a {
 }
 
 .banner img {
-  width: 100%;
+  width: clamp(375px, 100%, 1170px);
 }
 
 /* ===============Header-NavBar================ */
@@ -157,7 +157,6 @@ a {
 .banner-navbar__search {
   display: flex;
   width: 100%;
-  margin-top: 10px;
 }
 
 .second-content__logo:hover {
@@ -166,7 +165,8 @@ a {
 }
 
 .banner-navbar__container {
-  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px 0;
   border-radius: 12px;
 }
 
@@ -347,22 +347,22 @@ a {
 }
 
 /* ===============Brands-content================ */
-.brands_content {
+.brands__content {
   margin-top: 40px;
 }
-.brands_content .list-brand {
+.brands__content .list-brand {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.brands_content .list-brand img {
+.brands__content .list-brand img {
   width: 98px;
   height: 20px;
   object-fit: cover;
 }
 
-.brands_content .list-brand .item {
+.brands__content .list-brand .item {
   border: 1px solid #e5e7eb;
   border-radius: 4px;
   height: 34px;
@@ -370,13 +370,13 @@ a {
   padding: 2px 4px;
 }
 
-.brands_content .container {
+.brands__content .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.brands_content .container p {
+.brands__content .container p {
   font-size: 2.8rem;
   color: #fc521d;
   padding: 10px;
@@ -386,9 +386,10 @@ a {
 
 /* list-item */
 .list-item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(5, 1fr);
 }
 .list-item .item {
   position: relative;
