@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css"/>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-  </head>
-  <body>
-    <div class="container">
-      <div class="login-form">
-        <header><h1>Đăng nhập</h1></header>
+</head>
+<body>
+<div class="container">
+    <form class="login-form">
+        <header class="header">
+            <h1 class="header__heading">Đăng nhập</h1>
+        </header>
 
-        <main>
-          <div class="input-form">
-            <p>Tài khoản:</p>
-            <div class="user">
-              <span><i class="fa-solid fa-user"></i></span>
-              <input type="text" placeholder="Tài khoản" />
+        <main class="main">
+            <div class="main__input-form">
+                <label for="username" class="main__label">Tài khoản:</label>
+                <div class="main__input-form--user">
+                    <span><i class="fa-solid fa-user"></i></span>
+                    <input type="text" name="username" id="username" placeholder="Tài khoản"/>
+                </div>
+                <label for="password" class="main__label">Mật khẩu:</label>
+                <div class="main__input-form--password">
+                    <span><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" name="password" id="password" placeholder="Mật khẩu"/>
+                </div>
             </div>
-            <p>Mật khẩu:</p>
-            <div class="password">
-              <span><i class="fa-solid fa-lock"></i></span>
-              <input type="password" placeholder="Mật khẩu" />
+
+            <div class="main__rememberPassword">
+                <input type="checkbox" name="Remember" class="main__checkbox"/> Nhớ mật
+                khẩu
             </div>
-          </div>
 
-          <div class="rememberPassword">
-            <input type="checkbox" name="Remember" /> Nhớ mật khẩu
-          </div>
+            <div class="main__btn">
+                <button class="btn main__btn--signUp" type="submit">Đăng nhâp</button>
+                <button class="btn main__btn--signIn" type="submit">Đăng ký</button>
+            </div>
 
-          <div class="btn-signUp-signIn">
-            <button class="btn" type="button">Đăng nhâp</button>
-            <button class="btn" type="button">Đăng ký</button>
-          </div>
+            <div class="main__forgotPassword">Quên mật khẩu?</div>
 
-          <div class="forgotPassword">Quên mật khẩu?</div>
+            <div class="main__split">
+                <p>Hoặc</p>
+            </div>
 
-          <div class="split">
-            <p>Hoặc</p>
-          </div>
-
-          <div class="link">
-            <ul class="social__items">
-              <li class="social__item">
-                <img src="/image/facebook.png" alt="facebook" />
-              </li>
-              <li class="social__item">
-                <img src="/image/google.png" alt="google" />
-              </li>
-            </ul>
-          </div>
+            <div class="main__link">
+                <ul class="main__social-items">
+                    <li>
+                        <img src="/img/facebook.png" alt="facebook"/>
+                    </li>
+                    <li>
+                        <img src="/img/google.png" alt="google"/>
+                    </li>
+                </ul>
+            </div>
         </main>
 
-        <footer></footer>
-      </div>
-    </div>
-  </body>
+        <footer class="footer"></footer>
+    </form>
+</div>
+</body>
 </html>
