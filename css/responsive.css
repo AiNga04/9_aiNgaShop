@@ -1,0 +1,33 @@
+/* PC */
+@media (min-width: 1170px) {
+  /* 1. Ẩn nav_img */
+  .banner img {
+    display: none;
+  }
+}
+
+@media (max-width: 1169.98px) {
+  /* 1. Ẩn nav */
+  .first-content {
+    display: none;
+  }
+  .banner img {
+    height: 44px;
+    width: clamp(375px, 100%, 1170px);
+    position: relative;
+  }
+  /* 2. Căn chỉnh menu icon */
+  /* .menu-header__icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  } */
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1169.98px) {
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+}
