@@ -4,6 +4,11 @@
   .banner img {
     display: none;
   }
+
+  /* 2. Ẩn menu_icon */
+  .menu-header__icon {
+    display: none;
+  }
 }
 
 @media (max-width: 1169.98px) {
@@ -17,11 +22,29 @@
     position: relative;
   }
   /* 2. Căn chỉnh menu icon */
-  /* .menu-header__icon {
+  .menu-header__icon {
     position: absolute;
-    width: 30px;
-    height: 30px;
-  } */
+    top: 0;
+    left: 20px;
+    z-index: 2;
+    font-size: 2.8rem;
+  }
+  /* 3. Overlay */
+  .menu-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 2;
+    /* bình thường thì ẩn overlay đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  /* 5. Kiểm tra checkbox */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 /* Tablet */
