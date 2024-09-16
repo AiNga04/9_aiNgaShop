@@ -1,5 +1,5 @@
 /* PC */
-@media (min-width: 1170px) {
+@media (min-width: 992px) {
   /* 1. Ẩn nav_img */
   .banner img {
     display: none;
@@ -9,16 +9,21 @@
   .menu-header__icon {
     display: none;
   }
+
+  /* 3. Ẩn menu mobile_header */
+  .mobile-header {
+    display: none;
+  }
 }
 
-@media (max-width: 1169.98px) {
+@media (max-width: 991.98px) {
   /* 1. Ẩn nav */
   .first-content {
     display: none;
   }
   .banner img {
     height: 44px;
-    width: clamp(375px, 100%, 1170px);
+    width: 100%;
     position: relative;
   }
   /* 2. Căn chỉnh menu icon */
@@ -32,7 +37,7 @@
   /* 3. Overlay */
   .menu-overlay {
     position: fixed;
-    background: rgba(0, 0, 0, 0.3);
+    background: #00000030;
     inset: 0;
     z-index: 2;
     /* bình thường thì ẩn overlay đi */
@@ -40,17 +45,85 @@
     visibility: hidden;
     transition: 0.5s;
   }
-  /* 5. Kiểm tra checkbox */
+  /* 4. Kiểm tra checkbox */
   .menu-checkbox:checked ~ .menu-overlay {
     opacity: 1;
     visibility: visible;
   }
+  /* 5. Code cho menu */
+  .menu-drawer {
+    position: fixed;
+    background-color: var(--menu-color);
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    padding: 60px;
+    font-size: 2rem;
+  }
+  /* 6. kiểm tra menu checked */
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+
+  /* top menu */
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu__logo {
+    height: 44px;
+  }
+
+  .menu__close {
+    width: 24px;
+    color: #fff;
+  }
+
+  #navbar__list--mobile {
+    margin-top: 25px;
+  }
+
+  .navbar__link {
+    display: block;
+  }
+
+  .first-content__item:hover {
+    background-color: #77c2f830;
+  }
+
+  /* second-content */
+  .second-content__logo {
+    display: none;
+  }
+
+  .second-content__contact-cart {
+    display: none;
+  }
+
+  .second-content__body,
+  .second-content,
+  .second-content__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1169.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .second-content__search {
+    width: 80%;
+    padding: 0 10%;
+  }
 }
 
 /* Mobile */
 @media (max-width: 767.98px) {
+  .second-content__search {
+    width: 50%;
+    min-width: 350px;
+    padding: 0 10%;
+  }
 }

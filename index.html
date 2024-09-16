@@ -28,39 +28,47 @@
       <div class="first-content">
         <div class="first-content__body">
           <nav class="first-content__nav container">
-            <ul class="first-content__list">
+            <ul class="first-content__list" id="navbar__list--pc">
               <li class="first-content__item first-content__item--active">
-                <a href="./" class="first-content__link">
+                <a class="navbar__link" href="./" class="first-content__link">
                   <i class="fa-solid fa-house"></i> Trang chủ
                 </a>
               </li>
               <li class="first-content__item">
-                <a href="introduce.html" class="first-content__link">
+                <a
+                  class="navbar__link"
+                  href="introduce.html"
+                  class="first-content__link"
+                >
                   <i class="fa-regular fa-newspaper"></i> Giới thiệu
                 </a>
               </li>
               <li class="first-content__item">
-                <a href="#!" class="first-content__link">
+                <a class="navbar__link" href="#!" class="first-content__link">
                   <i class="fa-solid fa-store"></i> Hệ thống siêu thị
                 </a>
               </li>
               <li class="first-content__item">
-                <a href="#!" class="first-content__link">
+                <a class="navbar__link" href="#!" class="first-content__link">
                   <i class="fa-solid fa-magnifying-glass"></i> Tra cứu đơn hàng
                 </a>
               </li>
               <li class="first-content__item">
-                <a href="#!" class="first-content__link">
+                <a class="navbar__link" href="#!" class="first-content__link">
                   <i class="fa-solid fa-bell"></i> Thông báo
                 </a>
               </li>
               <li class="first-content__item">
-                <a href="#!" class="first-content__link">
+                <a class="navbar__link" href="#!" class="first-content__link">
                   <i class="fa-solid fa-circle-info"></i> Hỗ trợ
                 </a>
               </li>
               <li class="first-content__item">
-                <a href="/login.html" class="first-content__link">
+                <a
+                  class="navbar__link"
+                  href="/login.html"
+                  class="first-content__link"
+                >
                   <i class="fa-regular fa-user"></i> Đăng nhập/Đăng ký
                 </a>
               </li>
@@ -78,8 +86,8 @@
 
       <!-- Second content-->
       <div class="second-content second-content--fixed">
-        <div class="second-content__body">
-          <nav class="second-content__navbar container">
+        <div class="second-content__body container">
+          <nav class="second-content__navbar">
             <!-- Logo -->
             <img class="second-content__logo" src="./img/logo.png" alt="logo" />
 
@@ -127,6 +135,27 @@
 
           <!-- overlay -->
           <label for="checkbox" class="menu-overlay"></label>
+
+          <!-- Menu content -->
+          <div class="menu-drawer">
+            <!-- top menu-drawer -->
+            <div class="menu-drawer__top">
+              <!-- logo -->
+              <img class="menu__logo" src="img/logo.png" alt="logo" />
+              <!-- close menu -->
+              <label for="checkbox">
+                <img class="menu__close" src="icon/close-64.svg" alt="close" />
+              </label>
+            </div>
+            <!-- nav mobile -->
+            <ul id="navbar__list--mobile"></ul>
+            <!-- Sử dụng js để copy navbar -->
+            <script>
+              const navPC = document.querySelector("#navbar__list--pc");
+              const navMobile = document.querySelector("#navbar__list--mobile");
+              navMobile.innerHTML = navPC.innerHTML;
+            </script>
+          </div>
         </div>
       </div>
 
