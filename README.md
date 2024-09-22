@@ -6,4 +6,4 @@
 
 Xem bản demo trực tiếp của trang web tại đây:
 
-[Demo Trực Tiếp](https://ainga04.github.io/aiNgaShop/)
+[Demo Trực Tiếp](https://ainga04.github.io/9_aiNgaShop/)
