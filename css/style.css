@@ -215,9 +215,9 @@ ul.slides input {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
   font-size: 80px;
   line-height: 50vh;
+  z-index: 0;
   color: #fff;
 }
 
@@ -255,7 +255,7 @@ ul.slides input {
   left: 0;
   right: 0;
   bottom: 20px;
-  z-index: 1;
+  z-index: 0;
   text-align: center;
 }
 

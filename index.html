@@ -1,1042 +1,874 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Trương Ái Nga" />
-    <meta name="description" content="Website bán điện thoại hiện đại." />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <title>Nga Trương Store</title>
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist/js/bootstrap.bundle.js" />
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap-grid.css" />
-  </head>
-  <body>
-    <header class="header">
-      <!-- First content -->
-      <div class="first-content">
-        <div class="first-content__body">
-          <nav class="first-content__nav container">
-            <ul class="first-content__list" id="navbar__list--pc">
-              <li class="first-content__item first-content__item--active">
-                <a class="navbar__link" href="./" class="first-content__link">
-                  <i class="fa-solid fa-house"></i> Trang chủ
-                </a>
-              </li>
-              <li class="first-content__item">
-                <a
-                  class="navbar__link"
-                  href="introduce.html"
-                  class="first-content__link"
-                >
-                  <i class="fa-regular fa-newspaper"></i> Giới thiệu
-                </a>
-              </li>
-              <li class="first-content__item">
-                <a class="navbar__link" href="#!" class="first-content__link">
-                  <i class="fa-solid fa-store"></i> Hệ thống siêu thị
-                </a>
-              </li>
-              <li class="first-content__item">
-                <a class="navbar__link" href="#!" class="first-content__link">
-                  <i class="fa-solid fa-magnifying-glass"></i> Tra cứu đơn hàng
-                </a>
-              </li>
-              <li class="first-content__item">
-                <a class="navbar__link" href="#!" class="first-content__link">
-                  <i class="fa-solid fa-bell"></i> Thông báo
-                </a>
-              </li>
-              <li class="first-content__item">
-                <a class="navbar__link" href="#!" class="first-content__link">
-                  <i class="fa-solid fa-circle-info"></i> Hỗ trợ
-                </a>
-              </li>
-              <li class="first-content__item">
-                <a
-                  class="navbar__link"
-                  href="/login.html"
-                  class="first-content__link"
-                >
-                  <i class="fa-regular fa-user"></i> Đăng nhập/Đăng ký
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Trương Ái Nga" />
+  <meta name="description" content="Website bán điện thoại hiện đại." />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <title>Nga Trương Store</title>
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/js/bootstrap.bundle.js" />
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap-grid.css" />
+</head>
+
+<body>
+  <header class="header">
+    <!-- First content -->
+    <div class="first-content">
+      <div class="first-content__body">
+        <nav class="first-content__nav container">
+          <ul class="first-content__list" id="navbar__list--pc">
+            <li class="first-content__item first-content__item--active">
+              <a class="navbar__link" href="./" class="first-content__link">
+                <i class="fa-solid fa-house"></i> Trang chủ
+              </a>
+            </li>
+            <li class="first-content__item">
+              <a class="navbar__link" href="introduce.html" class="first-content__link">
+                <i class="fa-regular fa-newspaper"></i> Giới thiệu
+              </a>
+            </li>
+            <li class="first-content__item">
+              <a class="navbar__link" href="#!" class="first-content__link">
+                <i class="fa-solid fa-store"></i> Hệ thống siêu thị
+              </a>
+            </li>
+            <li class="first-content__item">
+              <a class="navbar__link" href="#!" class="first-content__link">
+                <i class="fa-solid fa-magnifying-glass"></i> Tra cứu đơn hàng
+              </a>
+            </li>
+            <li class="first-content__item">
+              <a class="navbar__link" href="#!" class="first-content__link">
+                <i class="fa-solid fa-bell"></i> Thông báo
+              </a>
+            </li>
+            <li class="first-content__item">
+              <a class="navbar__link" href="#!" class="first-content__link">
+                <i class="fa-solid fa-circle-info"></i> Hỗ trợ
+              </a>
+            </li>
+            <li class="first-content__item">
+              <a class="navbar__link" href="/login.html" class="first-content__link">
+                <i class="fa-regular fa-user"></i> Đăng nhập/Đăng ký
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <!-- Banner -->
-      <div class="banner">
-        <figure class="banner__img">
-          <img src="./img/banner.png" alt="logo" />
-        </figure>
-      </div>
-
-      <!-- Second content-->
-      <div class="second-content second-content--fixed">
-        <div class="second-content__body container">
-          <nav class="second-content__navbar">
-            <!-- Logo -->
-            <img class="second-content__logo" src="./img/logo.png" alt="logo" />
-
-            <!-- Tìm kiếm -->
-            <div class="second-content__search">
-              <input
-                class="second-content__search-input"
-                type="search"
-                placeholder="Bạn cần tìm kiếm gì?"
-                autocomplete="off"
-              />
-              <button class="second-content__search-button" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm
-              </button>
-            </div>
-
-            <!-- Contact and Cart -->
-            <div class="second-content__contact-cart">
-              <a href="https://maps.app.goo.gl/LKk9eR9o1LsUBxTz6">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Định vị cửa hàng</span>
-              </a>
-
-              <a href="">
-                <i class="fa fa-shopping-cart"></i>
-                <span>Giỏ hàng</span>
-              </a>
-            </div>
-          </nav>
-        </div>
-
-        <!-- Tablet & Mobile header -->
-        <div class="mobile-header">
-          <!-- tablet/mobile menu -->
-          <input
-            type="checkbox"
-            name="checkbox"
-            id="checkbox"
-            class="menu-checkbox"
-            hidden
-          />
-          <label for="checkbox" class="menu-header__icon">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-
-          <!-- overlay -->
-          <label for="checkbox" class="menu-overlay"></label>
-
-          <!-- Menu content -->
-          <div class="menu-drawer">
-            <!-- top menu-drawer -->
-            <div class="menu-drawer__top">
-              <!-- logo -->
-              <img class="menu__logo" src="img/logo.png" alt="logo" />
-              <!-- close menu -->
-              <label for="checkbox">
-                <img class="menu__close" src="icon/close-64.svg" alt="close" />
-              </label>
-            </div>
-            <!-- nav mobile -->
-            <ul id="navbar__list--mobile"></ul>
-            <!-- Sử dụng js để copy navbar -->
-            <script>
-              const navPC = document.querySelector("#navbar__list--pc");
-              const navMobile = document.querySelector("#navbar__list--mobile");
-              navMobile.innerHTML = navPC.innerHTML;
-            </script>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <!-- Hero Section -->
-      <div class="hero">
-        <div class="container">
-          <div class="carousel">
-            <ul class="slides">
-              <input type="radio" name="radio-buttons" id="img-1" checked />
-              <li class="slide-container">
-                <div class="slide-image">
-                  <img src="img/carousel-1.jpg" />
-                </div>
-                <div class="carousel-controls">
-                  <label for="img-3" class="prev-slide"> </label>
-                  <label for="img-2" class="next-slide"> </label>
-                </div>
-              </li>
-              <input type="radio" name="radio-buttons" id="img-2" />
-              <li class="slide-container">
-                <div class="slide-image">
-                  <img src="img/carousel-3.jpg" />
-                </div>
-                <div class="carousel-controls">
-                  <label for="img-1" class="prev-slide"> </label>
-                  <label for="img-3" class="next-slide"> </label>
-                </div>
-              </li>
-              <input type="radio" name="radio-buttons" id="img-3" />
-              <li class="slide-container">
-                <div class="slide-image">
-                  <img src="img/carousel-4.jpg" />
-                </div>
-                <div class="carousel-controls">
-                  <label for="img-2" class="prev-slide"> </label>
-                  <label for="img-1" class="next-slide"> </label>
-                </div>
-              </li>
-              <div class="carousel-dots">
-                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-              </div>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Ads -->
-      <section>
-        <div class="container">
-          <div class="ads">
-            <a href="/index.html" target="_top"
-              ><img src="./img/blackFriday.gif" style="width: 100%"
-            /></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="quick__advertise">
-        <div class="container">
-          <div class="quick-sales">
-            <div class="item">
-              <a href="#!" target="_blank">
-                <img
-                  src="./img/sale-1.jpg"
-                  title="Siêu Sale Đặc Biệt "
-                  alt="Siêu Sale Đặc Biệt "
-                />
-              </a>
-            </div>
-            <div class="item">
-              <a href="#!" target="_blank">
-                <img
-                  src="./img/sale-2.gif"
-                  title="Siêu Sale Đặc Biệt "
-                  alt="Siêu Sale Đặc Biệt "
-                />
-              </a>
-            </div>
-            <div class="item">
-              <a href="#!" target="_blank">
-                <img
-                  src="https://static2-images.vnncdn.net/files/publish/2022/10/5/iphone-ifold-1081.gif"
-                  title="iphone gập"
-                  alt="iphone gập"
-                />
-              </a>
-            </div>
-            <div class="item">
-              <a href="#!" target="_blank">
-                <img
-                  src="./img/s23-ultra.gif"
-                  title="Galaxy S23 Ultra"
-                  alt="Galaxy S23 Ultra"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Flash sales -->
-      <section class="flash-sales">
-        <div class="container">
-          <div class="flash-sales__content">
-            <div class="top">
-              <h3>
-                F<i class="fa-solid fa-bolt-lightning"></i>ASH SALE ONLINE
-              </h3>
-              <div class="timer">
-                <strong> 8 </strong><strong> 5 </strong><span> : </span
-                ><strong> 5 </strong><strong> 3 </strong><span> : </span
-                ><strong> 5 </strong><strong> 6 </strong>
-              </div>
-            </div>
-            <div class="body">
-              <div class="lr-item">
-                <!-- item-1 -->
-                <div class="item">
-                  <div class="icon">
-                    <div class="sticker hot">HOT</div>
-                    <div class="sticker sale">-10%</div>
-                  </div>
-                  <a
-                    href="/dtdd/iphone-13?utm_recommendation=1"
-                    class="main-contain"
-                    data-name="Điện thoại iPhone 13 128GB"
-                  >
-                    <div class="item-img">
-                      <img
-                        class="lazyloaded"
-                        alt="iPhone 13 128GB"
-                        src="./img/iphone-13.jpg"
-                      />
-                    </div>
-                    <div class="detail">
-                      <p class="title">Iphone 13 256GB</p>
-                      <div class="price">
-                        <p class="origin-price">29.990.000 vnđ</p>
-                        <p class="sale-price">26.991.000 vnđ</p>
-                      </div>
-                      <div class="rating">
-                        <span>4.5</span>
-                        <img src="./icon/star.svg" alt="star" />
-                        <i class="iconnewglobal-vote"></i>(577)
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- item-2 -->
-                <div class="item">
-                  <div class="icon">
-                    <div class="sticker hot">HOT</div>
-                    <div class="sticker sale">-10%</div>
-                  </div>
-                  <a
-                    href="/dtdd/iphone-13?utm_recommendation=1"
-                    class="main-contain"
-                    data-name="Điện thoại iPhone 13 128GB"
-                  >
-                    <div class="item-img">
-                      <img
-                        class="lazyloaded"
-                        alt="iPhone 13 128GB"
-                        src="./img/iphone-13.jpg"
-                      />
-                    </div>
-                    <div class="detail">
-                      <p class="title">Iphone 13 256GB</p>
-                      <div class="price">
-                        <p class="origin-price">29.990.000 vnđ</p>
-                        <p class="sale-price">26.991.000 vnđ</p>
-                      </div>
-                      <div class="rating">
-                        <span>4.5</span>
-                        <img src="./icon/star.svg" alt="star" />
-                        <i class="iconnewglobal-vote"></i>(577)
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- item-3 -->
-                <div class="item">
-                  <div class="icon">
-                    <div class="sticker hot">HOT</div>
-                    <div class="sticker sale">-10%</div>
-                  </div>
-                  <a
-                    href="/dtdd/iphone-13?utm_recommendation=1"
-                    class="main-contain"
-                    data-name="Điện thoại iPhone 13 128GB"
-                  >
-                    <div class="item-img">
-                      <img
-                        class="lazyloaded"
-                        alt="iPhone 13 128GB"
-                        src="./img/iphone-13.jpg"
-                      />
-                    </div>
-                    <div class="detail">
-                      <p class="title">Iphone 13 256GB</p>
-                      <div class="price">
-                        <p class="origin-price">29.990.000 vnđ</p>
-                        <p class="sale-price">26.991.000 vnđ</p>
-                      </div>
-                      <div class="rating">
-                        <span>4.5</span>
-                        <img src="./icon/star.svg" alt="star" />
-                        <i class="iconnewglobal-vote"></i>(577)
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- item-4 -->
-                <div class="item">
-                  <div class="icon">
-                    <div class="sticker hot">HOT</div>
-                    <div class="sticker sale">-10%</div>
-                  </div>
-                  <a
-                    href="/dtdd/iphone-13?utm_recommendation=1"
-                    class="main-contain"
-                    data-name="Điện thoại iPhone 13 128GB"
-                  >
-                    <div class="item-img">
-                      <img
-                        class="lazyloaded"
-                        alt="iPhone 13 128GB"
-                        src="./img/iphone-13.jpg"
-                      />
-                    </div>
-                    <div class="detail">
-                      <p class="title">Iphone 13 256GB</p>
-                      <div class="price">
-                        <p class="origin-price">29.990.000 vnđ</p>
-                        <p class="sale-price">26.991.000 vnđ</p>
-                      </div>
-                      <div class="rating">
-                        <span>4.5</span>
-                        <img src="./icon/star.svg" alt="star" />
-                        <i class="iconnewglobal-vote"></i>(577)
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- item-5 -->
-                <div class="item">
-                  <div class="icon">
-                    <div class="sticker hot">HOT</div>
-                    <div class="sticker sale">-10%</div>
-                  </div>
-                  <a
-                    href="/dtdd/iphone-13?utm_recommendation=1"
-                    class="main-contain"
-                    data-name="Điện thoại iPhone 13 128GB"
-                  >
-                    <div class="item-img">
-                      <img
-                        class="lazyloaded"
-                        alt="iPhone 13 128GB"
-                        src="./img/iphone-13.jpg"
-                      />
-                    </div>
-                    <div class="detail">
-                      <p class="title">Iphone 13 256GB</p>
-                      <div class="price">
-                        <p class="origin-price">29.990.000 vnđ</p>
-                        <p class="sale-price">26.991.000 vnđ</p>
-                      </div>
-                      <div class="rating">
-                        <span>4.5</span>
-                        <img src="./icon/star.svg" alt="star" />
-                        <i class="iconnewglobal-vote"></i>(577)
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- item-6 -->
-                <div class="item">
-                  <div class="icon">
-                    <div class="sticker hot">HOT</div>
-                    <div class="sticker sale">-10%</div>
-                  </div>
-                  <a
-                    href="/dtdd/iphone-13?utm_recommendation=1"
-                    class="main-contain"
-                    data-name="Điện thoại iPhone 13 128GB"
-                  >
-                    <div class="item-img">
-                      <img
-                        class="lazyloaded"
-                        alt="iPhone 13 128GB"
-                        src="./img/iphone-13.jpg"
-                      />
-                    </div>
-                    <div class="detail">
-                      <p class="title">Iphone 13 256GB</p>
-                      <div class="price">
-                        <p class="origin-price">29.990.000 vnđ</p>
-                        <p class="sale-price">26.991.000 vnđ</p>
-                      </div>
-                      <div class="rating">
-                        <span>4.5</span>
-                        <img src="./icon/star.svg" alt="star" />
-                        <i class="iconnewglobal-vote"></i>(577)
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- item-7 -->
-                <div class="item">
-                  <div class="icon">
-                    <div class="sticker hot">HOT</div>
-                    <div class="sticker sale">-10%</div>
-                  </div>
-                  <a
-                    href="/dtdd/iphone-13?utm_recommendation=1"
-                    class="main-contain"
-                    data-name="Điện thoại iPhone 13 128GB"
-                  >
-                    <div class="item-img">
-                      <img
-                        class="lazyloaded"
-                        alt="iPhone 13 128GB"
-                        src="./img/iphone-13.jpg"
-                      />
-                    </div>
-                    <div class="detail">
-                      <p class="title">Iphone 13 256GB</p>
-                      <div class="price">
-                        <p class="origin-price">29.990.000 vnđ</p>
-                        <p class="sale-price">26.991.000 vnđ</p>
-                      </div>
-                      <div class="rating">
-                        <span>4.5</span>
-                        <img src="./icon/star.svg" alt="star" />
-                        <i class="iconnewglobal-vote"></i>(577)
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- item-8 -->
-                <div class="item">
-                  <div class="icon">
-                    <div class="sticker hot">HOT</div>
-                    <div class="sticker sale">-10%</div>
-                  </div>
-                  <a
-                    href="/dtdd/iphone-13?utm_recommendation=1"
-                    class="main-contain"
-                    data-name="Điện thoại iPhone 13 128GB"
-                  >
-                    <div class="item-img">
-                      <img
-                        class="lazyloaded"
-                        alt="iPhone 13 128GB"
-                        src="./img/iphone-13.jpg"
-                      />
-                    </div>
-                    <div class="detail">
-                      <p class="title">Iphone 13 256GB</p>
-                      <div class="price">
-                        <p class="origin-price">29.990.000 vnđ</p>
-                        <p class="sale-price">26.991.000 vnđ</p>
-                      </div>
-                      <div class="rating">
-                        <span>4.5</span>
-                        <img src="./icon/star.svg" alt="star" />
-                        <i class="iconnewglobal-vote"></i>(577)
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- item-9 -->
-                <div class="item">
-                  <div class="icon">
-                    <div class="sticker hot">HOT</div>
-                    <div class="sticker sale">-10%</div>
-                  </div>
-                  <a
-                    href="/dtdd/iphone-13?utm_recommendation=1"
-                    class="main-contain"
-                    data-name="Điện thoại iPhone 13 128GB"
-                  >
-                    <div class="item-img">
-                      <img
-                        class="lazyloaded"
-                        alt="iPhone 13 128GB"
-                        src="./img/iphone-13.jpg"
-                      />
-                    </div>
-                    <div class="detail">
-                      <p class="title">Iphone 13 256GB</p>
-                      <div class="price">
-                        <p class="origin-price">29.990.000 vnđ</p>
-                        <p class="sale-price">26.991.000 vnđ</p>
-                      </div>
-                      <div class="rating">
-                        <span>4.5</span>
-                        <img src="./icon/star.svg" alt="star" />
-                        <i class="iconnewglobal-vote"></i>(577)
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- item-10 -->
-                <div class="item">
-                  <div class="icon">
-                    <div class="sticker hot">HOT</div>
-                    <div class="sticker sale">-10%</div>
-                  </div>
-                  <a
-                    href="/dtdd/iphone-13?utm_recommendation=1"
-                    class="main-contain"
-                    data-name="Điện thoại iPhone 13 128GB"
-                  >
-                    <div class="item-img">
-                      <img
-                        class="lazyloaded"
-                        alt="iPhone 13 128GB"
-                        src="./img/iphone-13.jpg"
-                      />
-                    </div>
-                    <div class="detail">
-                      <p class="title">Iphone 13 256GB</p>
-                      <div class="price">
-                        <p class="origin-price">29.990.000 vnđ</p>
-                        <p class="sale-price">26.991.000 vnđ</p>
-                      </div>
-                      <div class="rating">
-                        <span>4.5</span>
-                        <img src="./icon/star.svg" alt="star" />
-                        <i class="iconnewglobal-vote"></i>(577)
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- item-11 -->
-                <div class="item">
-                  <div class="icon">
-                    <div class="sticker hot">HOT</div>
-                    <div class="sticker sale">-10%</div>
-                  </div>
-                  <a
-                    href="/dtdd/iphone-13?utm_recommendation=1"
-                    class="main-contain"
-                    data-name="Điện thoại iPhone 13 128GB"
-                  >
-                    <div class="item-img">
-                      <img
-                        class="lazyloaded"
-                        alt="iPhone 13 128GB"
-                        src="./img/iphone-13.jpg"
-                      />
-                    </div>
-                    <div class="detail">
-                      <p class="title">Iphone 13 256GB</p>
-                      <div class="price">
-                        <p class="origin-price">29.990.000 vnđ</p>
-                        <p class="sale-price">26.991.000 vnđ</p>
-                      </div>
-                      <div class="rating">
-                        <span>4.5</span>
-                        <img src="./icon/star.svg" alt="star" />
-                        <i class="iconnewglobal-vote"></i>(577)
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- item-12 -->
-                <div class="item">
-                  <div class="icon">
-                    <div class="sticker hot">HOT</div>
-                    <div class="sticker sale">-10%</div>
-                  </div>
-                  <a
-                    href="/dtdd/iphone-13?utm_recommendation=1"
-                    class="main-contain"
-                    data-name="Điện thoại iPhone 13 128GB"
-                  >
-                    <div class="item-img">
-                      <img
-                        class="lazyloaded"
-                        alt="iPhone 13 128GB"
-                        src="./img/iphone-13.jpg"
-                      />
-                    </div>
-                    <div class="detail">
-                      <p class="title">Iphone 13 256GB</p>
-                      <div class="price">
-                        <p class="origin-price">29.990.000 vnđ</p>
-                        <p class="sale-price">26.991.000 vnđ</p>
-                      </div>
-                      <div class="rating">
-                        <span>4.5</span>
-                        <img src="./icon/star.svg" alt="star" />
-                        <i class="iconnewglobal-vote"></i>(577)
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Brands content -->
-      <section>
-        <div class="container">
-          <div class="brands__content">
-            <div><p>Dành cho bạn</p></div>
-            <div class="list-brand">
-              <div class="item">
-                <a href="#!" target="_self" class="brand"
-                  ><img src="./img/iphone.webp" alt="Apple" loading="lazy" />
-                </a>
-              </div>
-              <div class="item">
-                <a href="#!" target="_self" class="brand"
-                  ><img src="./img/samsung.webp" alt="Samsung" loading="lazy" />
-                </a>
-              </div>
-              <div class="item">
-                <a href="#!" target="_self" class="brand"
-                  ><img src="./img/xiaomi.webp" alt="Xiaomi" loading="lazy" />
-                </a>
-              </div>
-              <div class="item">
-                <a href="#!" target="_self" class="brand"
-                  ><img src="./img/oppo.webp" alt="OPPO" loading="lazy" />
-                </a>
-              </div>
-              <div class="item">
-                <a href="#!" target="_self" class="brand"
-                  ><img src="./img/realme.webp" alt="realme" loading="lazy" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- List item -->
-          <div class="list-item">
-            <!-- item-1 -->
-            <div class="item">
-              <div class="icon">
-                <div class="sticker hot">HOT</div>
-                <div class="sticker sale">-10%</div>
-              </div>
-              <a
-                href="/dtdd/iphone-13?utm_recommendation=1"
-                class="main-contain"
-                data-name="Điện thoại iPhone 13 128GB"
-              >
-                <div class="item-img">
-                  <img
-                    class="lazyloaded"
-                    alt="iPhone 13 128GB"
-                    src="./img/iphone-13.jpg"
-                  />
-                </div>
-                <div class="detail">
-                  <p class="title">Iphone 13 256GB</p>
-                  <div class="price">
-                    <p class="origin-price">29.990.000 vnđ</p>
-                    <p class="sale-price">26.991.000 vnđ</p>
-                  </div>
-                  <div class="rating">
-                    <span>4.5</span> <img src="./icon/star.svg" alt="star" />
-                    <i class="iconnewglobal-vote"></i>(577)
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- item-1 -->
-            <div class="item">
-              <div class="icon">
-                <div class="sticker hot">HOT</div>
-                <div class="sticker sale">-10%</div>
-              </div>
-              <a
-                href="/dtdd/iphone-13?utm_recommendation=1"
-                class="main-contain"
-                data-name="Điện thoại iPhone 13 128GB"
-              >
-                <div class="item-img">
-                  <img
-                    class="lazyloaded"
-                    alt="iPhone 13 128GB"
-                    src="./img/iphone-13.jpg"
-                  />
-                </div>
-                <div class="detail">
-                  <p class="title">Iphone 13 256GB</p>
-                  <div class="price">
-                    <p class="origin-price">29.990.000 vnđ</p>
-                    <p class="sale-price">26.991.000 vnđ</p>
-                  </div>
-                  <div class="rating">
-                    <span>4.5</span> <img src="./icon/star.svg" alt="star" />
-                    <i class="iconnewglobal-vote"></i>(577)
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- item-1 -->
-            <div class="item">
-              <div class="icon">
-                <div class="sticker hot">HOT</div>
-                <div class="sticker sale">-10%</div>
-              </div>
-              <a
-                href="/dtdd/iphone-13?utm_recommendation=1"
-                class="main-contain"
-                data-name="Điện thoại iPhone 13 128GB"
-              >
-                <div class="item-img">
-                  <img
-                    class="lazyloaded"
-                    alt="iPhone 13 128GB"
-                    src="./img/iphone-13.jpg"
-                  />
-                </div>
-                <div class="detail">
-                  <p class="title">Iphone 13 256GB</p>
-                  <div class="price">
-                    <p class="origin-price">29.990.000 vnđ</p>
-                    <p class="sale-price">26.991.000 vnđ</p>
-                  </div>
-                  <div class="rating">
-                    <span>4.5</span> <img src="./icon/star.svg" alt="star" />
-                    <i class="iconnewglobal-vote"></i>(577)
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- item-1 -->
-            <div class="item">
-              <div class="icon">
-                <div class="sticker hot">HOT</div>
-                <div class="sticker sale">-10%</div>
-              </div>
-              <a
-                href="/dtdd/iphone-13?utm_recommendation=1"
-                class="main-contain"
-                data-name="Điện thoại iPhone 13 128GB"
-              >
-                <div class="item-img">
-                  <img
-                    class="lazyloaded"
-                    alt="iPhone 13 128GB"
-                    src="./img/iphone-13.jpg"
-                  />
-                </div>
-                <div class="detail">
-                  <p class="title">Iphone 13 256GB</p>
-                  <div class="price">
-                    <p class="origin-price">29.990.000 vnđ</p>
-                    <p class="sale-price">26.991.000 vnđ</p>
-                  </div>
-                  <div class="rating">
-                    <span>4.5</span> <img src="./icon/star.svg" alt="star" />
-                    <i class="iconnewglobal-vote"></i>(577)
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- item-1 -->
-            <div class="item">
-              <div class="icon">
-                <div class="sticker hot">HOT</div>
-                <div class="sticker sale">-10%</div>
-              </div>
-              <a
-                href="/dtdd/iphone-13?utm_recommendation=1"
-                class="main-contain"
-                data-name="Điện thoại iPhone 13 128GB"
-              >
-                <div class="item-img">
-                  <img
-                    class="lazyloaded"
-                    alt="iPhone 13 128GB"
-                    src="./img/iphone-13.jpg"
-                  />
-                </div>
-                <div class="detail">
-                  <p class="title">Iphone 13 256GB</p>
-                  <div class="price">
-                    <p class="origin-price">29.990.000 vnđ</p>
-                    <p class="sale-price">26.991.000 vnđ</p>
-                  </div>
-                  <div class="rating">
-                    <span>4.5</span> <img src="./icon/star.svg" alt="star" />
-                    <i class="iconnewglobal-vote"></i>(577)
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- item-1 -->
-            <div class="item">
-              <div class="icon">
-                <div class="sticker hot">HOT</div>
-                <div class="sticker sale">-10%</div>
-              </div>
-              <a
-                href="/dtdd/iphone-13?utm_recommendation=1"
-                class="main-contain"
-                data-name="Điện thoại iPhone 13 128GB"
-              >
-                <div class="item-img">
-                  <img
-                    class="lazyloaded"
-                    alt="iPhone 13 128GB"
-                    src="./img/iphone-13.jpg"
-                  />
-                </div>
-                <div class="detail">
-                  <p class="title">Iphone 13 256GB</p>
-                  <div class="price">
-                    <p class="origin-price">29.990.000 vnđ</p>
-                    <p class="sale-price">26.991.000 vnđ</p>
-                  </div>
-                  <div class="rating">
-                    <span>4.5</span> <img src="./icon/star.svg" alt="star" />
-                    <i class="iconnewglobal-vote"></i>(577)
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- item-1 -->
-            <div class="item">
-              <div class="icon">
-                <div class="sticker hot">HOT</div>
-                <div class="sticker sale">-10%</div>
-              </div>
-              <a
-                href="/dtdd/iphone-13?utm_recommendation=1"
-                class="main-contain"
-                data-name="Điện thoại iPhone 13 128GB"
-              >
-                <div class="item-img">
-                  <img
-                    class="lazyloaded"
-                    alt="iPhone 13 128GB"
-                    src="./img/iphone-13.jpg"
-                  />
-                </div>
-                <div class="detail">
-                  <p class="title">Iphone 13 256GB</p>
-                  <div class="price">
-                    <p class="origin-price">29.990.000 vnđ</p>
-                    <p class="sale-price">26.991.000 vnđ</p>
-                  </div>
-                  <div class="rating">
-                    <span>4.5</span> <img src="./icon/star.svg" alt="star" />
-                    <i class="iconnewglobal-vote"></i>(577)
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <div class="corevalue">
-            <div class="item">
-              <span class="icon">
-                <i class="fa-regular fa-circle-check"></i>
-              </span>
-              <div class="text">
-                <span>Sản phẩm</span>
-                <strong>CHÍNH HÃNG</strong>
-              </div>
-            </div>
-            <div class="item">
-              <span class="icon">
-                <i class="fa-solid fa-truck-fast"></i>
-              </span>
-              <div class="text">
-                <span>Miễn phí vận chuyển</span>
-                <strong>TOÀN QUỐC</strong>
-              </div>
-            </div>
-            <div class="item">
-              <span class="icon">
-                <i class="fa-solid fa-headset"></i>
-              </span>
-              <div class="text">
-                <span>Hotline hỗ trợ</span>
-                <strong>1900.0000</strong>
-              </div>
-            </div>
-            <div class="item">
-              <span class="icon">
-                <i class="fa-solid fa-arrows-rotate"></i>
-              </span>
-              <div class="text">
-                <span>Thủ tục đổi trả</span>
-                <strong>DỄ DÀNG</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="main-content container">
-        <div class="row">
-          <div class="column">
-            <h1>Điện Thoại Trương Ái Nga</h1>
-            <p class="desc desc-h1">
-              Cần trợ giúp cho việc chọn mua điện thoại mơ ước của bạn? Hãy tin
-              tưởng chúng tôi. Với Cửa Hàng Điện Thoại Trương Ái Nga, việc mua
-              sắm trở nên dễ dàng hơn rất nhiều.
-            </p>
-            <p class="contact">
-              <a href="#!"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#!"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#!"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#!"><i class="fa-brands fa-instagram"></i></a>
-            </p>
-          </div>
-          <div class="column">
-            <div class="title">Công ty</div>
-            <div class="line"></div>
-            <a href=""><p class="desc">Giới thiệu</p></a>
-            <a href=""><p class="desc">Hệ thống siêu thị</p></a>
-            <a href=""><p class="desc">Tin tức mới nhất</p></a>
-            <a href=""><p class="desc">Tuyển dụng</p></a>
-          </div>
-          <div class="column">
-            <div class="title">Hỗ trợ</div>
-            <div class="line"></div>
-            <a href=""><p class="desc">Câu hỏi thường gặp</p></a>
-            <a href=""><p class="desc">Điều khoản & Điều kiện</p></a>
-            <a href=""><p class="desc">Chính sách quyền riêng tư</p></a>
-            <a href=""><p class="desc">Liên hệ với chúng tôi</p></a>
-          </div>
-          <div class="column">
-            <div class="title">Địa chỉ</div>
-            <div class="line"></div>
-            <a href=""
-              ><p class="desc">
-                Location: 27 Division St, New York, NY 10002, USA
-              </p>
-            </a>
-            <a href=""><p class="desc">Email: aingaspkt@gmail.com</p></a>
-            <a href=""><p class="desc">Phone: + 84 376 600 545</p></a>
-          </div>
-        </div>
-        <div class="line"></div>
-        <div class="desc-foot">
-          2024 Cửa Hàng Trương Ái Nga. Tất cả quyền được bảo lưu.
-        </div>
-      </div>
-    </footer>
-    <div>
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script
-        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"
-      ></script>
     </div>
-  </body>
+
+    <!-- Banner -->
+    <div class="banner">
+      <figure class="banner__img">
+        <img src="./img/banner.png" alt="logo" />
+      </figure>
+    </div>
+
+    <!-- Second content-->
+    <div class="second-content second-content--fixed">
+      <div class="second-content__body container">
+        <nav class="second-content__navbar">
+          <!-- Logo -->
+          <img class="second-content__logo" src="./img/logo.png" alt="logo" />
+
+          <!-- Tìm kiếm -->
+          <div class="second-content__search">
+            <input class="second-content__search-input" type="search" placeholder="Bạn cần tìm kiếm gì?"
+              autocomplete="off" />
+            <button class="second-content__search-button" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm
+            </button>
+          </div>
+
+          <!-- Contact and Cart -->
+          <div class="second-content__contact-cart">
+            <a href="https://maps.app.goo.gl/LKk9eR9o1LsUBxTz6">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Định vị cửa hàng</span>
+            </a>
+
+            <a href="">
+              <i class="fa fa-shopping-cart"></i>
+              <span>Giỏ hàng</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Tablet & Mobile header -->
+      <div class="mobile-header">
+        <!-- tablet/mobile menu -->
+        <input type="checkbox" name="checkbox" id="checkbox" class="menu-checkbox" hidden />
+        <label for="checkbox" class="menu-header__icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <!-- overlay -->
+        <label for="checkbox" class="menu-overlay"></label>
+
+        <!-- Menu content -->
+        <div class="menu-drawer">
+          <!-- top menu-drawer -->
+          <div class="menu-drawer__top">
+            <!-- logo -->
+            <img class="menu__logo" src="img/logo.png" alt="logo" />
+            <!-- close menu -->
+            <label for="checkbox">
+              <img class="menu__close" src="icon/close-64.svg" alt="close" />
+            </label>
+          </div>
+          <!-- nav mobile -->
+          <ul id="navbar__list--mobile"></ul>
+          <!-- Sử dụng js để copy navbar -->
+          <script>
+            const navPC = document.querySelector("#navbar__list--pc");
+            const navMobile = document.querySelector("#navbar__list--mobile");
+            navMobile.innerHTML = navPC.innerHTML;
+          </script>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="container">
+        <div class="carousel">
+          <ul class="slides">
+            <input type="radio" name="radio-buttons" id="img-1" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="img/carousel-1.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-3" class="prev-slide"> </label>
+                <label for="img-2" class="next-slide"> </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-2" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="img/carousel-3.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-1" class="prev-slide"> </label>
+                <label for="img-3" class="next-slide"> </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-3" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="img/carousel-4.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-2" class="prev-slide"> </label>
+                <label for="img-1" class="next-slide"> </label>
+              </div>
+            </li>
+            <div class="carousel-dots">
+              <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+              <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+              <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ads -->
+    <section>
+      <div class="container">
+        <div class="ads">
+          <a href="/index.html" target="_top"><img src="./img/blackFriday.gif" style="width: 100%" /></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick__advertise">
+      <div class="container">
+        <div class="quick-sales">
+          <div class="item">
+            <a href="#!" target="_blank">
+              <img src="./img/sale-1.jpg" title="Siêu Sale Đặc Biệt " alt="Siêu Sale Đặc Biệt " />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#!" target="_blank">
+              <img src="./img/sale-2.gif" title="Siêu Sale Đặc Biệt " alt="Siêu Sale Đặc Biệt " />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#!" target="_blank">
+              <img src="https://static2-images.vnncdn.net/files/publish/2022/10/5/iphone-ifold-1081.gif"
+                title="iphone gập" alt="iphone gập" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#!" target="_blank">
+              <img src="./img/s23-ultra.gif" title="Galaxy S23 Ultra" alt="Galaxy S23 Ultra" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flash sales -->
+    <section class="flash-sales">
+      <div class="container">
+        <div class="flash-sales__content">
+          <div class="top">
+            <h3>
+              F<i class="fa-solid fa-bolt-lightning"></i>ASH SALE ONLINE
+            </h3>
+            <div class="timer">
+              <strong> 8 </strong><strong> 5 </strong><span> : </span><strong> 5 </strong><strong> 3 </strong><span> :
+              </span><strong> 5 </strong><strong> 6 </strong>
+            </div>
+          </div>
+          <div class="body">
+            <div class="lr-item">
+              <!-- item-1 -->
+              <div class="item">
+                <div class="icon">
+                  <div class="sticker hot">HOT</div>
+                  <div class="sticker sale">-10%</div>
+                </div>
+                <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain"
+                  data-name="Điện thoại iPhone 13 128GB">
+                  <div class="item-img">
+                    <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+                  </div>
+                  <div class="detail">
+                    <p class="title">Iphone 13 256GB</p>
+                    <div class="price">
+                      <p class="origin-price">29.990.000 vnđ</p>
+                      <p class="sale-price">26.991.000 vnđ</p>
+                    </div>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <img src="./icon/star.svg" alt="star" />
+                      <i class="iconnewglobal-vote"></i>(577)
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- item-2 -->
+              <div class="item">
+                <div class="icon">
+                  <div class="sticker hot">HOT</div>
+                  <div class="sticker sale">-10%</div>
+                </div>
+                <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain"
+                  data-name="Điện thoại iPhone 13 128GB">
+                  <div class="item-img">
+                    <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+                  </div>
+                  <div class="detail">
+                    <p class="title">Iphone 13 256GB</p>
+                    <div class="price">
+                      <p class="origin-price">29.990.000 vnđ</p>
+                      <p class="sale-price">26.991.000 vnđ</p>
+                    </div>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <img src="./icon/star.svg" alt="star" />
+                      <i class="iconnewglobal-vote"></i>(577)
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- item-3 -->
+              <div class="item">
+                <div class="icon">
+                  <div class="sticker hot">HOT</div>
+                  <div class="sticker sale">-10%</div>
+                </div>
+                <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain"
+                  data-name="Điện thoại iPhone 13 128GB">
+                  <div class="item-img">
+                    <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+                  </div>
+                  <div class="detail">
+                    <p class="title">Iphone 13 256GB</p>
+                    <div class="price">
+                      <p class="origin-price">29.990.000 vnđ</p>
+                      <p class="sale-price">26.991.000 vnđ</p>
+                    </div>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <img src="./icon/star.svg" alt="star" />
+                      <i class="iconnewglobal-vote"></i>(577)
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- item-4 -->
+              <div class="item">
+                <div class="icon">
+                  <div class="sticker hot">HOT</div>
+                  <div class="sticker sale">-10%</div>
+                </div>
+                <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain"
+                  data-name="Điện thoại iPhone 13 128GB">
+                  <div class="item-img">
+                    <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+                  </div>
+                  <div class="detail">
+                    <p class="title">Iphone 13 256GB</p>
+                    <div class="price">
+                      <p class="origin-price">29.990.000 vnđ</p>
+                      <p class="sale-price">26.991.000 vnđ</p>
+                    </div>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <img src="./icon/star.svg" alt="star" />
+                      <i class="iconnewglobal-vote"></i>(577)
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- item-5 -->
+              <div class="item">
+                <div class="icon">
+                  <div class="sticker hot">HOT</div>
+                  <div class="sticker sale">-10%</div>
+                </div>
+                <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain"
+                  data-name="Điện thoại iPhone 13 128GB">
+                  <div class="item-img">
+                    <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+                  </div>
+                  <div class="detail">
+                    <p class="title">Iphone 13 256GB</p>
+                    <div class="price">
+                      <p class="origin-price">29.990.000 vnđ</p>
+                      <p class="sale-price">26.991.000 vnđ</p>
+                    </div>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <img src="./icon/star.svg" alt="star" />
+                      <i class="iconnewglobal-vote"></i>(577)
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- item-6 -->
+              <div class="item">
+                <div class="icon">
+                  <div class="sticker hot">HOT</div>
+                  <div class="sticker sale">-10%</div>
+                </div>
+                <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain"
+                  data-name="Điện thoại iPhone 13 128GB">
+                  <div class="item-img">
+                    <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+                  </div>
+                  <div class="detail">
+                    <p class="title">Iphone 13 256GB</p>
+                    <div class="price">
+                      <p class="origin-price">29.990.000 vnđ</p>
+                      <p class="sale-price">26.991.000 vnđ</p>
+                    </div>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <img src="./icon/star.svg" alt="star" />
+                      <i class="iconnewglobal-vote"></i>(577)
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- item-7 -->
+              <div class="item">
+                <div class="icon">
+                  <div class="sticker hot">HOT</div>
+                  <div class="sticker sale">-10%</div>
+                </div>
+                <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain"
+                  data-name="Điện thoại iPhone 13 128GB">
+                  <div class="item-img">
+                    <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+                  </div>
+                  <div class="detail">
+                    <p class="title">Iphone 13 256GB</p>
+                    <div class="price">
+                      <p class="origin-price">29.990.000 vnđ</p>
+                      <p class="sale-price">26.991.000 vnđ</p>
+                    </div>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <img src="./icon/star.svg" alt="star" />
+                      <i class="iconnewglobal-vote"></i>(577)
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- item-8 -->
+              <div class="item">
+                <div class="icon">
+                  <div class="sticker hot">HOT</div>
+                  <div class="sticker sale">-10%</div>
+                </div>
+                <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain"
+                  data-name="Điện thoại iPhone 13 128GB">
+                  <div class="item-img">
+                    <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+                  </div>
+                  <div class="detail">
+                    <p class="title">Iphone 13 256GB</p>
+                    <div class="price">
+                      <p class="origin-price">29.990.000 vnđ</p>
+                      <p class="sale-price">26.991.000 vnđ</p>
+                    </div>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <img src="./icon/star.svg" alt="star" />
+                      <i class="iconnewglobal-vote"></i>(577)
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- item-9 -->
+              <div class="item">
+                <div class="icon">
+                  <div class="sticker hot">HOT</div>
+                  <div class="sticker sale">-10%</div>
+                </div>
+                <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain"
+                  data-name="Điện thoại iPhone 13 128GB">
+                  <div class="item-img">
+                    <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+                  </div>
+                  <div class="detail">
+                    <p class="title">Iphone 13 256GB</p>
+                    <div class="price">
+                      <p class="origin-price">29.990.000 vnđ</p>
+                      <p class="sale-price">26.991.000 vnđ</p>
+                    </div>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <img src="./icon/star.svg" alt="star" />
+                      <i class="iconnewglobal-vote"></i>(577)
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- item-10 -->
+              <div class="item">
+                <div class="icon">
+                  <div class="sticker hot">HOT</div>
+                  <div class="sticker sale">-10%</div>
+                </div>
+                <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain"
+                  data-name="Điện thoại iPhone 13 128GB">
+                  <div class="item-img">
+                    <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+                  </div>
+                  <div class="detail">
+                    <p class="title">Iphone 13 256GB</p>
+                    <div class="price">
+                      <p class="origin-price">29.990.000 vnđ</p>
+                      <p class="sale-price">26.991.000 vnđ</p>
+                    </div>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <img src="./icon/star.svg" alt="star" />
+                      <i class="iconnewglobal-vote"></i>(577)
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- item-11 -->
+              <div class="item">
+                <div class="icon">
+                  <div class="sticker hot">HOT</div>
+                  <div class="sticker sale">-10%</div>
+                </div>
+                <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain"
+                  data-name="Điện thoại iPhone 13 128GB">
+                  <div class="item-img">
+                    <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+                  </div>
+                  <div class="detail">
+                    <p class="title">Iphone 13 256GB</p>
+                    <div class="price">
+                      <p class="origin-price">29.990.000 vnđ</p>
+                      <p class="sale-price">26.991.000 vnđ</p>
+                    </div>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <img src="./icon/star.svg" alt="star" />
+                      <i class="iconnewglobal-vote"></i>(577)
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- item-12 -->
+              <div class="item">
+                <div class="icon">
+                  <div class="sticker hot">HOT</div>
+                  <div class="sticker sale">-10%</div>
+                </div>
+                <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain"
+                  data-name="Điện thoại iPhone 13 128GB">
+                  <div class="item-img">
+                    <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+                  </div>
+                  <div class="detail">
+                    <p class="title">Iphone 13 256GB</p>
+                    <div class="price">
+                      <p class="origin-price">29.990.000 vnđ</p>
+                      <p class="sale-price">26.991.000 vnđ</p>
+                    </div>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <img src="./icon/star.svg" alt="star" />
+                      <i class="iconnewglobal-vote"></i>(577)
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands content -->
+    <section>
+      <div class="container">
+        <div class="brands__content">
+          <div>
+            <p>Dành cho bạn</p>
+          </div>
+          <div class="list-brand">
+            <div class="item">
+              <a href="#!" target="_self" class="brand"><img src="./img/iphone.webp" alt="Apple" loading="lazy" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="#!" target="_self" class="brand"><img src="./img/samsung.webp" alt="Samsung" loading="lazy" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="#!" target="_self" class="brand"><img src="./img/xiaomi.webp" alt="Xiaomi" loading="lazy" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="#!" target="_self" class="brand"><img src="./img/oppo.webp" alt="OPPO" loading="lazy" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="#!" target="_self" class="brand"><img src="./img/realme.webp" alt="realme" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- List item -->
+        <div class="list-item">
+          <!-- item-1 -->
+          <div class="item">
+            <div class="icon">
+              <div class="sticker hot">HOT</div>
+              <div class="sticker sale">-10%</div>
+            </div>
+            <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain" data-name="Điện thoại iPhone 13 128GB">
+              <div class="item-img">
+                <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+              </div>
+              <div class="detail">
+                <p class="title">Iphone 13 256GB</p>
+                <div class="price">
+                  <p class="origin-price">29.990.000 vnđ</p>
+                  <p class="sale-price">26.991.000 vnđ</p>
+                </div>
+                <div class="rating">
+                  <span>4.5</span> <img src="./icon/star.svg" alt="star" />
+                  <i class="iconnewglobal-vote"></i>(577)
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- item-1 -->
+          <div class="item">
+            <div class="icon">
+              <div class="sticker hot">HOT</div>
+              <div class="sticker sale">-10%</div>
+            </div>
+            <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain" data-name="Điện thoại iPhone 13 128GB">
+              <div class="item-img">
+                <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+              </div>
+              <div class="detail">
+                <p class="title">Iphone 13 256GB</p>
+                <div class="price">
+                  <p class="origin-price">29.990.000 vnđ</p>
+                  <p class="sale-price">26.991.000 vnđ</p>
+                </div>
+                <div class="rating">
+                  <span>4.5</span> <img src="./icon/star.svg" alt="star" />
+                  <i class="iconnewglobal-vote"></i>(577)
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- item-1 -->
+          <div class="item">
+            <div class="icon">
+              <div class="sticker hot">HOT</div>
+              <div class="sticker sale">-10%</div>
+            </div>
+            <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain" data-name="Điện thoại iPhone 13 128GB">
+              <div class="item-img">
+                <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+              </div>
+              <div class="detail">
+                <p class="title">Iphone 13 256GB</p>
+                <div class="price">
+                  <p class="origin-price">29.990.000 vnđ</p>
+                  <p class="sale-price">26.991.000 vnđ</p>
+                </div>
+                <div class="rating">
+                  <span>4.5</span> <img src="./icon/star.svg" alt="star" />
+                  <i class="iconnewglobal-vote"></i>(577)
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- item-1 -->
+          <div class="item">
+            <div class="icon">
+              <div class="sticker hot">HOT</div>
+              <div class="sticker sale">-10%</div>
+            </div>
+            <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain" data-name="Điện thoại iPhone 13 128GB">
+              <div class="item-img">
+                <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+              </div>
+              <div class="detail">
+                <p class="title">Iphone 13 256GB</p>
+                <div class="price">
+                  <p class="origin-price">29.990.000 vnđ</p>
+                  <p class="sale-price">26.991.000 vnđ</p>
+                </div>
+                <div class="rating">
+                  <span>4.5</span> <img src="./icon/star.svg" alt="star" />
+                  <i class="iconnewglobal-vote"></i>(577)
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- item-1 -->
+          <div class="item">
+            <div class="icon">
+              <div class="sticker hot">HOT</div>
+              <div class="sticker sale">-10%</div>
+            </div>
+            <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain" data-name="Điện thoại iPhone 13 128GB">
+              <div class="item-img">
+                <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+              </div>
+              <div class="detail">
+                <p class="title">Iphone 13 256GB</p>
+                <div class="price">
+                  <p class="origin-price">29.990.000 vnđ</p>
+                  <p class="sale-price">26.991.000 vnđ</p>
+                </div>
+                <div class="rating">
+                  <span>4.5</span> <img src="./icon/star.svg" alt="star" />
+                  <i class="iconnewglobal-vote"></i>(577)
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- item-1 -->
+          <div class="item">
+            <div class="icon">
+              <div class="sticker hot">HOT</div>
+              <div class="sticker sale">-10%</div>
+            </div>
+            <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain" data-name="Điện thoại iPhone 13 128GB">
+              <div class="item-img">
+                <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+              </div>
+              <div class="detail">
+                <p class="title">Iphone 13 256GB</p>
+                <div class="price">
+                  <p class="origin-price">29.990.000 vnđ</p>
+                  <p class="sale-price">26.991.000 vnđ</p>
+                </div>
+                <div class="rating">
+                  <span>4.5</span> <img src="./icon/star.svg" alt="star" />
+                  <i class="iconnewglobal-vote"></i>(577)
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- item-1 -->
+          <div class="item">
+            <div class="icon">
+              <div class="sticker hot">HOT</div>
+              <div class="sticker sale">-10%</div>
+            </div>
+            <a href="/dtdd/iphone-13?utm_recommendation=1" class="main-contain" data-name="Điện thoại iPhone 13 128GB">
+              <div class="item-img">
+                <img class="lazyloaded" alt="iPhone 13 128GB" src="./img/iphone-13.jpg" />
+              </div>
+              <div class="detail">
+                <p class="title">Iphone 13 256GB</p>
+                <div class="price">
+                  <p class="origin-price">29.990.000 vnđ</p>
+                  <p class="sale-price">26.991.000 vnđ</p>
+                </div>
+                <div class="rating">
+                  <span>4.5</span> <img src="./icon/star.svg" alt="star" />
+                  <i class="iconnewglobal-vote"></i>(577)
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="corevalue">
+          <div class="item">
+            <span class="icon">
+              <i class="fa-regular fa-circle-check"></i>
+            </span>
+            <div class="text">
+              <span>Sản phẩm</span>
+              <strong>CHÍNH HÃNG</strong>
+            </div>
+          </div>
+          <div class="item">
+            <span class="icon">
+              <i class="fa-solid fa-truck-fast"></i>
+            </span>
+            <div class="text">
+              <span>Miễn phí vận chuyển</span>
+              <strong>TOÀN QUỐC</strong>
+            </div>
+          </div>
+          <div class="item">
+            <span class="icon">
+              <i class="fa-solid fa-headset"></i>
+            </span>
+            <div class="text">
+              <span>Hotline hỗ trợ</span>
+              <strong>1900.0000</strong>
+            </div>
+          </div>
+          <div class="item">
+            <span class="icon">
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </span>
+            <div class="text">
+              <span>Thủ tục đổi trả</span>
+              <strong>DỄ DÀNG</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="main-content container">
+      <div class="row">
+        <div class="column">
+          <h1>Điện Thoại Trương Ái Nga</h1>
+          <p class="desc desc-h1">
+            Cần trợ giúp cho việc chọn mua điện thoại mơ ước của bạn? Hãy tin
+            tưởng chúng tôi. Với Cửa Hàng Điện Thoại Trương Ái Nga, việc mua
+            sắm trở nên dễ dàng hơn rất nhiều.
+          </p>
+          <p class="contact">
+            <a href="#!"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#!"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#!"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+          </p>
+        </div>
+        <div class="column">
+          <div class="title">Công ty</div>
+          <div class="line"></div>
+          <a href="">
+            <p class="desc">Giới thiệu</p>
+          </a>
+          <a href="">
+            <p class="desc">Hệ thống siêu thị</p>
+          </a>
+          <a href="">
+            <p class="desc">Tin tức mới nhất</p>
+          </a>
+          <a href="">
+            <p class="desc">Tuyển dụng</p>
+          </a>
+        </div>
+        <div class="column">
+          <div class="title">Hỗ trợ</div>
+          <div class="line"></div>
+          <a href="">
+            <p class="desc">Câu hỏi thường gặp</p>
+          </a>
+          <a href="">
+            <p class="desc">Điều khoản & Điều kiện</p>
+          </a>
+          <a href="">
+            <p class="desc">Chính sách quyền riêng tư</p>
+          </a>
+          <a href="">
+            <p class="desc">Liên hệ với chúng tôi</p>
+          </a>
+        </div>
+        <div class="column">
+          <div class="title">Địa chỉ</div>
+          <div class="line"></div>
+          <a href="">
+            <p class="desc">
+              Location: 27 Division St, New York, NY 10002, USA
+            </p>
+          </a>
+          <a href="">
+            <p class="desc">Email: aingaspkt@gmail.com</p>
+          </a>
+          <a href="">
+            <p class="desc">Phone: + 84 376 600 545</p>
+          </a>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="desc-foot">
+        2024 Cửa Hàng Trương Ái Nga. Tất cả quyền được bảo lưu.
+      </div>
+    </div>
+  </footer>
+  <div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  </div>
+</body>
+
 </html>
