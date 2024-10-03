@@ -1,5 +1,8 @@
 :root {
   --primary-color: #a0c7ff;
+  --secondary-color: #f0f0f0;
+  --error-color: #ff4d4d;
+  --font-family: "Arial, sans-serif";
 }
 
 * {
@@ -13,43 +16,76 @@ html {
 }
 
 body {
+  font-family: var(--font-family);
   font-size: 1.6rem;
   width: 100%;
   height: 100%;
   padding: 20px;
+  background-color: var(--secondary-color);
 }
 
 .container {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  width: 50vw;
-  height: 100vh;
+  width: 60vw;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 40px 100px;
+  padding: 40px 30px;
+  background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .title {
   text-align: center;
-  color: red;
-  font-size: 4rem;
+  color: #333;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
 }
 
-.input {
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  font-size: 2rem;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .label {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+#hot {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
 }
 
 .btn {
-  padding: 10px;
+  padding: 12px 20px;
+  border: none;
   border-radius: 10px;
   background: var(--primary-color);
-  font-size: 2rem;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #89bde0;
 }

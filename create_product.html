@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create product</title>
+    <title>Create Product</title>
     <link rel="stylesheet" href="assets/css/create-product.css">
 </head>
 
@@ -12,31 +12,43 @@
     <div class="container">
         <h1 class="title">Tạo sản phẩm</h1>
 
-        <label class="label" for="hot">Hot</label>
-        <input type="text" id="hot" class="input">
+        <div class="form-group">
+            <label class="label" for="sale">Giảm giá (%)</label>
+            <input type="number" id="sale" class="input" min="0" max="100" placeholder="Nhập % giảm giá">
+        </div>
 
-        <label class="label" for="sale">Giảm giá %</label>
-        <input type="text" id="sale" class="input">
+        <div class="form-group">
+            <label class="label" for="img">Hình ảnh (URL)</label>
+            <input type="url" id="img" class="input" placeholder="Nhập URL hình ảnh">
+        </div>
 
-        <label class="label" for="img">Hình ảnh</label>
-        <input type="text" id="img" class="input">
+        <div class="form-group">
+            <label class="label" for="title">Tên sản phẩm</label>
+            <input type="text" id="title" class="input" placeholder="Nhập tên sản phẩm">
+        </div>
 
-        <label class="label" for="title">Tên sản phẩm</label>
-        <input type="text" id="title" class="input">
+        <div class="form-group">
+            <label class="label" for="originPrice">Giá gốc</label>
+            <input type="number" id="originPrice" class="input" min="0" placeholder="Nhập giá gốc">
+        </div>
 
-        <label class="label" for="originPrice">Giá gốc</label>
-        <input type="text" id="originPrice" class="input">
+        <div class="form-group">
+            <label class="label" for="rate">Sao</label>
+            <input type="number" id="rate" class="input" min="0" max="5" step="0.1" placeholder="Nhập số sao">
+        </div>
 
-        <label class="label" for="rate">Sao</label>
-        <input type="text" id="rate" class="input">
+        <div class="form-group">
+            <label class="label" for="vote">Đánh giá</label>
+            <input type="number" id="vote" class="input" min="0" placeholder="Nhập số đánh giá">
+        </div>
 
-        <label class="label" for="vote">Đánh giá</label>
-        <input type="text" id="vote" class="input">
+        <div class="form-group">
+            <label class="label" for="hot">Hot</label>
+            <input type="checkbox" id="hot" class="input">
+        </div>
 
-        <button class="btn" id="btn_create">Tạo sản phẩm</button>
+        <button type="button" class="btn" id="btn_create">Tạo sản phẩm</button>
     </div>
-
-
 
     <script src="assets/js/products.js"></script>
 </body>

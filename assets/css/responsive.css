@@ -179,26 +179,6 @@
     margin-top: 10px;
   }
 
-  /* 5 .quick__advertise */
-  .quick__advertise .quick-sales {
-    margin-top: 10px;
-    display: flex;
-    gap: 10px;
-    overflow: hidden;
-  }
-
-  .quick-sales .item img {
-    width: 230px;
-    height: 130px;
-    border-radius: 12px;
-  }
-
-  .quick-sales .item {
-    width: 230px;
-    height: 130px;
-    border-radius: 12px;
-  }
-
   /* 6 .corevalue */
   .corevalue .item .icon {
     height: 50px;
@@ -228,6 +208,10 @@
 
   .footer .desc {
     font-size: 1.2rem;
+  }
+
+  .flash-sales__content {
+    padding-bottom: 30px;
   }
 }
 
@@ -286,26 +270,22 @@
     border-radius: 7px;
   }
 
-  /* 4 .brands__content */
-
   /* 5 .quick__advertise */
-  .quick__advertise .quick-sales {
-    margin-top: 10px;
-    display: flex;
-    gap: 10px;
-    overflow: hidden;
+  .scroll-button.left {
+    left: 5px;
   }
 
-  .quick-sales .item img {
-    width: 200px;
-    height: 110px;
-    border-radius: 12px;
+  .scroll-button.right {
+    right: 5px;
   }
 
   .quick-sales .item {
-    width: 200px;
-    height: 110px;
-    border-radius: 12px;
+    width: 150px;
+    height: 80px;
+  }
+
+  .quick-sales .item img {
+    height: 80px;
   }
 
   /* 6. .flash-sales */
@@ -374,5 +354,9 @@
 
   .footer .desc-h1 {
     padding-right: 0;
+  }
+
+  .flash-sales__content {
+    padding-bottom: 20px;
   }
 }
