@@ -2,7 +2,7 @@ const products = [
   {
     hot: true,
     sale: 10,
-    img: "../img/iphone-14.jpg",
+    img: "img/iphone-14.jpg",
     title: "Iphone 14",
     company: "Apple",
     detail: {
@@ -24,7 +24,7 @@ const products = [
   {
     hot: false,
     sale: 15,
-    img: "../img/iphone-14-pro.jpg",
+    img: "img/iphone-14-pro.jpg",
     title: "Iphone 14 Pro",
     company: "Apple",
     detail: {
@@ -46,7 +46,7 @@ const products = [
   {
     hot: true,
     sale: 5,
-    img: "../img/iphone-14-pro-max.jpg",
+    img: "img/iphone-14-pro-max.jpg",
     title: "Iphone 14 Pro Max",
     company: "Apple",
     detail: {
@@ -68,7 +68,7 @@ const products = [
   {
     hot: false,
     sale: 20,
-    img: "../img/iphone-se-2022.jpg",
+    img: "img/iphone-se-2022.jpg",
     title: "Iphone SE 2022",
     company: "Apple",
     detail: {
@@ -90,7 +90,7 @@ const products = [
   {
     hot: true,
     sale: 12,
-    img: "../img/iphone-13.jpg",
+    img: "img/iphone-13.jpg",
     title: "Iphone 13",
     company: "Apple",
     detail: {
@@ -112,7 +112,7 @@ const products = [
   {
     hot: false,
     sale: 8,
-    img: "../img/iphone-13-pro.jpg",
+    img: "img/iphone-13-pro.jpg",
     title: "Iphone 13 Pro",
     company: "Apple",
     detail: {
@@ -134,7 +134,7 @@ const products = [
   {
     hot: true,
     sale: 18,
-    img: "../img/iphone-13-pro-max.jpg",
+    img: "img/iphone-13-pro-max.jpg",
     title: "Iphone 13 Pro Max",
     company: "Apple",
     detail: {
@@ -156,7 +156,7 @@ const products = [
   {
     hot: false,
     sale: 10,
-    img: "../img/iphone-12.jpg",
+    img: "img/iphone-12.jpg",
     title: "Iphone 12",
     company: "Apple",
     detail: {
@@ -178,7 +178,7 @@ const products = [
   {
     hot: true,
     sale: 25,
-    img: "../img/iphone-12-mini.jpg",
+    img: "img/iphone-12-mini.jpg",
     title: "Iphone 12 Mini",
     company: "Apple",
     detail: {
@@ -200,7 +200,7 @@ const products = [
   {
     hot: false,
     sale: 5,
-    img: "../img/iphone-12-pro.jpg",
+    img: "img/iphone-12-pro.jpg",
     title: "Iphone 12 Pro",
     company: "Apple",
     detail: {
@@ -222,7 +222,7 @@ const products = [
   {
     hot: true,
     sale: 20,
-    img: "../img/iphone-11.jpg",
+    img: "img/iphone-11.jpg",
     title: "Iphone 11",
     company: "Apple",
     detail: {
@@ -244,7 +244,7 @@ const products = [
   {
     hot: false,
     sale: 30,
-    img: "../img/iphone-xr.jpg",
+    img: "img/iphone-xr.jpg",
     title: "Iphone XR",
     company: "Apple",
     detail: {
@@ -266,7 +266,7 @@ const products = [
   {
     hot: true,
     sale: 7,
-    img: "../img/iphone-xs.jpg",
+    img: "img/iphone-xs.jpg",
     title: "Iphone XS",
     company: "Apple",
     detail: {
@@ -288,7 +288,7 @@ const products = [
   {
     hot: false,
     sale: 12,
-    img: "../img/iphone-xs-max.jpg",
+    img: "img/iphone-xs-max.jpg",
     title: "Iphone XS Max",
     company: "Apple",
     detail: {
@@ -310,7 +310,7 @@ const products = [
   {
     hot: true,
     sale: 9,
-    img: "../img/iphone-x.jpg",
+    img: "img/iphone-x.jpg",
     title: "Iphone X",
     company: "Apple",
     detail: {
@@ -332,7 +332,7 @@ const products = [
   {
     hot: false,
     sale: 22,
-    img: "../img/iphone-8.jpg",
+    img: "img/iphone-8.jpg",
     title: "Iphone 8",
     company: "Apple",
     detail: {
@@ -354,7 +354,7 @@ const products = [
   {
     hot: true,
     sale: 14,
-    img: "../img/iphone-7.jpg",
+    img: "img/iphone-7.jpg",
     title: "Iphone 7",
     company: "Apple",
     detail: {
@@ -376,7 +376,7 @@ const products = [
   {
     hot: false,
     sale: 16,
-    img: "../img/iphone-6s.jpg",
+    img: "img/iphone-6s.jpg",
     title: "Iphone 6S",
     company: "Apple",
     detail: {
@@ -398,7 +398,7 @@ const products = [
   {
     hot: true,
     sale: 25,
-    img: "../img/iphone-5s.jpg",
+    img: "img/iphone-5s.jpg",
     title: "Iphone 5S",
     company: "Apple",
     detail: {
@@ -420,7 +420,7 @@ const products = [
   {
     hot: false,
     sale: 18,
-    img: "../img/iphone-se-2020.jpg",
+    img: "img/iphone-se-2020.jpg",
     title: "Iphone SE 2020",
     company: "Apple",
     detail: {
@@ -442,7 +442,7 @@ const products = [
   {
     hot: true,
     sale: 11,
-    img: "../img/iphone-13-mini.jpg",
+    img: "img/iphone-13-mini.jpg",
     title: "Iphone 13 Mini",
     company: "Apple",
     detail: {
@@ -464,7 +464,7 @@ const products = [
   {
     hot: false,
     sale: 19,
-    img: "../img/iphone-12-pro-max.jpg",
+    img: "img/iphone-12-pro-max.jpg",
     title: "Iphone 12 Pro Max",
     company: "Apple",
     detail: {
