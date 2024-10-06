@@ -1,0 +1,21 @@
+/* PC */
+@media (min-width: 992px) {
+  /* 1. Ẩn nav_img */
+  .banner img {
+    display: none;
+  }
+
+  /* 2. Ẩn menu_icon */
+  .menu-header__icon {
+    display: none;
+  }
+
+  /* 3. Ẩn menu mobile_header */
+  .mobile-header {
+    display: none;
+  }
+
+  .carousel-controls {
+    z-index: 1;
+  }
+}

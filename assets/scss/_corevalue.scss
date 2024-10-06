@@ -1,0 +1,48 @@
+/* ================Core Value================ */
+.corevalue {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 60px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .text {
+      span {
+        display: block;
+        font-size: 1rem;
+        color: #333;
+      }
+
+      strong {
+        padding-left: 5px;
+        font-size: 1.6rem;
+        color: #fc521d;
+        font-weight: bold;
+      }
+    }
+  }
+}

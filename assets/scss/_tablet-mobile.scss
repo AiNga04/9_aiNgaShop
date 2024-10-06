@@ -1,0 +1,128 @@
+@media (max-width: 991.98px) {
+  /* 1. Ẩn nav */
+  .first-content {
+    display: none;
+  }
+  .banner img {
+    height: 44px;
+    width: 100%;
+    position: relative;
+  }
+  /* 2. Căn chỉnh menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 2;
+    font-size: 2.8rem;
+  }
+  /* 3. Overlay */
+  .menu-overlay {
+    position: fixed;
+    background: #00000030;
+    inset: 0;
+    z-index: 3;
+    /* bình thường thì ẩn overlay đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  /* 4. Kiểm tra checkbox */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* 5. Code cho menu */
+  .menu-drawer {
+    position: fixed;
+    background-color: $menu-color;
+    inset: 0 40% 0 0;
+    min-width: 350px;
+    z-index: 4;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    padding: 60px;
+    font-size: 2rem;
+  }
+  /* 6. kiểm tra menu checked */
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+
+  /* top menu */
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu__logo {
+    height: 44px;
+  }
+
+  .menu__close {
+    width: 24px;
+    color: #fff;
+  }
+
+  #navbar__list--mobile {
+    margin-top: 25px;
+  }
+
+  .navbar__link {
+    display: block;
+  }
+
+  .first-content__item:hover {
+    background-color: #77c2f830;
+  }
+
+  //   2. second-content
+  .second-content__logo {
+    display: none;
+  }
+
+  .map-cart {
+    display: none !important;
+  }
+
+  .hero {
+    .carousel {
+      .carousel-track-container {
+        height: 50vh; /* Giảm chiều cao cho tablet */
+      }
+
+      .carousel-button {
+        font-size: 1.5rem; /* Giảm kích thước nút điều khiển */
+      }
+
+      .carousel-indicator {
+        width: 8px;
+        height: 8px; /* Giảm kích thước của indicator */
+      }
+    }
+  }
+
+  /* 7. .flash-sales */
+  .flash-sales .body .lr-item {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 360px;
+    padding: 0 10px;
+    border-radius: 12px;
+  }
+
+  .flash-sales__content {
+    padding: 20px;
+  }
+
+  /* 8 .brands__content */
+  .brands__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brands__content {
+    overflow: hidden;
+  }
+}

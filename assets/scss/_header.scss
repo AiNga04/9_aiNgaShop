@@ -1,0 +1,113 @@
+/* ===============Header-Nav================ */
+.navbar__link {
+  color: #ffffff;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.header {
+  .first-content {
+    padding-top: 10px;
+    background-color: $primary-color;
+    .first-content__nav {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 auto;
+
+      .first-content__list {
+        display: flex;
+        gap: 15px;
+
+        .first-content__item {
+          .first-content__link {
+            position: relative;
+            color: #fff;
+            font-weight: 600;
+            padding: 0 20px;
+            text-decoration: none;
+
+            &:hover,
+            &.first-content__item--active {
+              text-shadow: 0.8px 0 0 currentColor;
+              text-decoration: none;
+            }
+
+            &.first-content__item--active::after {
+              position: absolute;
+              display: block;
+              content: "";
+              width: 1.2rem;
+              height: 0.2rem;
+              border-radius: 1px;
+              background: currentColor;
+              left: 44px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ===============Header-NavBar================ */
+.second-content {
+  margin-top: 0;
+  background-color: white;
+
+  .second-content__navbar {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      height: 40px;
+      object-fit: cover;
+    }
+  }
+
+  .second-content__search {
+    width: 400px;
+    display: flex;
+
+    .second-content__search-input {
+      width: 70%;
+      padding: 5px 10px;
+      border-radius: 20px 0 0 20px;
+    }
+
+    .second-content__search-button {
+      width: 30%;
+      padding: 0;
+      border-radius: 0 20px 20px 0;
+      transform: translateX(-1px);
+    }
+  }
+
+  .second-content__contact-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      margin: 0px 20px;
+      font-weight: 600;
+      color: $color-gray;
+
+      &:hover {
+        text-shadow: 1px 0 0 currentColor;
+        text-decoration: none;
+      }
+    }
+
+    i {
+      padding: 5px 0;
+      border-radius: 50%;
+    }
+  }
+
+  .second-content__logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

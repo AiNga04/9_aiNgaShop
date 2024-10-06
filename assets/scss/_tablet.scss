@@ -1,0 +1,123 @@
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .second-content__search {
+    margin: auto;
+  }
+
+  /* 2 .hero */
+  .prev-slide {
+    height: 300px;
+  }
+
+  .next-slide {
+    height: 300px;
+  }
+
+  ul.slides {
+    height: 300px;
+  }
+
+  .slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .carousel-controls {
+    font-size: 60px;
+  }
+
+  /* 3 .ads */
+  .main .ads {
+    margin-top: 10px;
+  }
+
+  .hero {
+    .carousel {
+      .carousel-track-container {
+        height: 45vh; /* Giảm chiều cao cho màn hình từ 768px đến 991.98px */
+      }
+
+      .carousel-button {
+        font-size: 1.4rem; /* Giảm kích thước nút điều khiển */
+      }
+
+      .carousel-indicator {
+        width: 7px;
+        height: 7px; /* Thu nhỏ kích thước indicator cho màn hình từ 768px đến 991.98px */
+      }
+    }
+  }
+
+  //4. Item
+  .flash-sales__content {
+    .item {
+      width: 180px;
+      height: 340px;
+      margin: 15px;
+
+      img {
+        height: 180px;
+        width: 180px;
+        object-fit: cover;
+      }
+
+      .icon {
+        width: 180px;
+      }
+
+      .detail {
+        .title {
+          font-size: 1.4rem;
+        }
+
+        .price {
+          .origin-price {
+            font-size: 1.2rem;
+          }
+
+          .sale-price {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  // 5. Flash sale
+  .flash-sales__content {
+    padding-bottom: 30px;
+  }
+
+  /* 6 .corevalue */
+  .corevalue .item .icon {
+    height: 50px;
+    width: 50px;
+    font-size: 35px;
+    padding: 5px;
+  }
+
+  .corevalue .item .text {
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 10px;
+  }
+
+  /* 7. .footer */
+  .footer {
+    padding: 60px 0;
+  }
+
+  .footer h1 {
+    font-size: 1.6rem;
+  }
+
+  .footer .title {
+    font-size: 1.4rem;
+  }
+
+  .footer .desc {
+    font-size: 1.2rem;
+  }
+}

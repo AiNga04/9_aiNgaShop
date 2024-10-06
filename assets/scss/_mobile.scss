@@ -1,0 +1,165 @@
+@media (max-width: 767.98px) {
+  .second-content__search-button {
+    width: 40%;
+  }
+
+  .second-content__search {
+    width: 100%;
+    height: 30px;
+    min-width: 350px;
+    padding: 0 10%;
+  }
+
+  /* 3 .ads */
+  .main .ads {
+    margin-top: 5px;
+  }
+
+  .ads img {
+    border-radius: 7px;
+  }
+
+  /* 5 .quick__advertise */
+  .scroll-button.left {
+    left: 5px;
+  }
+
+  .scroll-button.right {
+    right: 5px;
+  }
+
+  .quick-sales .item {
+    width: 150px;
+    height: 80px;
+  }
+
+  .quick-sales .item img {
+    height: 80px;
+  }
+
+  .flash-sales .top {
+    padding: 0;
+  }
+
+  /* 6. .flash-sales */
+  .flash-sales .top .timer strong {
+    color: #fff;
+    background-color: #000;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flash-sales .top h3 {
+    font-size: 1.6rem;
+    color: #fc521d;
+  }
+  .flash-sales__content {
+    .item {
+      width: 180px;
+      height: 340px;
+      margin: 15px;
+
+      img {
+        height: 180px;
+        width: 180px;
+        object-fit: cover;
+      }
+
+      .icon {
+        width: 180px;
+      }
+
+      .detail {
+        .title {
+          font-size: 1.4rem;
+        }
+
+        .price {
+          .origin-price {
+            font-size: 1.2rem;
+          }
+
+          .sale-price {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .hero {
+    .carousel {
+      .carousel-track-container {
+        height: 40vh; /* Giảm chiều cao cho mobile */
+      }
+
+      .carousel-button {
+        font-size: 1.2rem; /* Giảm thêm kích thước font cho nút điều khiển */
+      }
+
+      .carousel-indicator {
+        width: 6px;
+        height: 6px; /* Thu nhỏ kích thước indicator cho mobile */
+      }
+    }
+  }
+
+  /* 7 .list-item */
+  .list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* 8 .corevalue */
+  .corevalue {
+    display: flex;
+    justify-content: center;
+    padding: 0 5px;
+  }
+
+  .corevalue .item .icon {
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+  }
+
+  .corevalue .item .text {
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 10px;
+  }
+
+  .main-contain .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 9 .footer */
+  .footer .row .column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer .row .column .line {
+    display: none;
+  }
+
+  .footer .row .column:first-child {
+    width: 100%;
+  }
+
+  .footer .desc-h1 {
+    padding-right: 0;
+  }
+
+  .flash-sales__content {
+    padding-bottom: 20px;
+  }
+}

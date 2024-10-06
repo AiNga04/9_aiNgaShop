@@ -1,25 +1,22 @@
+@charset "UTF-8";
 /* PC */
 @media (min-width: 992px) {
   /* 1. Ẩn nav_img */
   .banner img {
     display: none;
   }
-
   /* 2. Ẩn menu_icon */
   .menu-header__icon {
     display: none;
   }
-
   /* 3. Ẩn menu mobile_header */
   .mobile-header {
     display: none;
   }
-
   .carousel-controls {
     z-index: 1;
   }
 }
-
 @media (max-width: 991.98px) {
   /* 1. Ẩn nav */
   .first-content {
@@ -41,7 +38,7 @@
   /* 3. Overlay */
   .menu-overlay {
     position: fixed;
-    background: #00000030;
+    background: rgba(0, 0, 0, 0.1882352941);
     inset: 0;
     z-index: 3;
     /* bình thường thì ẩn overlay đi */
@@ -57,7 +54,7 @@
   /* 5. Code cho menu */
   .menu-drawer {
     position: fixed;
-    background-color: var(--menu-color);
+    background-color: #cae2ff;
     inset: 0 40% 0 0;
     min-width: 350px;
     z-index: 4;
@@ -70,7 +67,6 @@
   .menu-checkbox:checked ~ .menu-drawer {
     transform: translateX(0);
   }
-
   /* top menu */
   .menu-drawer__top {
     display: flex;
@@ -80,105 +76,119 @@
   .menu__logo {
     height: 44px;
   }
-
   .menu__close {
     width: 24px;
     color: #fff;
   }
-
   #navbar__list--mobile {
     margin-top: 25px;
   }
-
   .navbar__link {
     display: block;
   }
-
   .first-content__item:hover {
-    background-color: #77c2f830;
+    background-color: rgba(119, 194, 248, 0.1882352941);
   }
-
-  /* second-content */
   .second-content__logo {
     display: none;
   }
-
-  .second-content__contact-cart {
-    display: none;
+  .map-cart {
+    display: none !important;
   }
-
-  .second-content__body,
-  .second-content,
-  .second-content__navbar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  .hero .carousel .carousel-track-container {
+    height: 50vh; /* Giảm chiều cao cho tablet */
   }
-
+  .hero .carousel .carousel-button {
+    font-size: 1.5rem; /* Giảm kích thước nút điều khiển */
+  }
+  .hero .carousel .carousel-indicator {
+    width: 8px;
+    height: 8px; /* Giảm kích thước của indicator */
+  }
   /* 7. .flash-sales */
   .flash-sales .body .lr-item {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    height: 400px;
+    height: 360px;
+    padding: 0 10px;
+    border-radius: 12px;
   }
-
+  .flash-sales__content {
+    padding: 20px;
+  }
   /* 8 .brands__content */
   .brands__content {
     display: flex;
     flex-direction: column;
   }
-
   .brands__content {
     overflow: hidden;
   }
-
-  /* 9 .footer */
-  .footer .row .column {
-    width: 45%; /* Giảm kích thước cột khi màn hình nhỏ hơn */
-  }
-
-  .footer .row .column:first-child {
-    width: 100%; /* Cột đầu tiên chiếm toàn bộ chiều ngang */
-  }
 }
-
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .second-content__search {
-    width: 100%;
-    padding: 0 10%;
+    margin: auto;
   }
-
   /* 2 .hero */
   .prev-slide {
     height: 300px;
   }
-
   .next-slide {
     height: 300px;
   }
-
   ul.slides {
     height: 300px;
   }
-
   .slide-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
   }
-
   .carousel-controls {
     font-size: 60px;
   }
-
   /* 3 .ads */
   .main .ads {
     margin-top: 10px;
   }
-
+  .hero .carousel .carousel-track-container {
+    height: 45vh; /* Giảm chiều cao cho màn hình từ 768px đến 991.98px */
+  }
+  .hero .carousel .carousel-button {
+    font-size: 1.4rem; /* Giảm kích thước nút điều khiển */
+  }
+  .hero .carousel .carousel-indicator {
+    width: 7px;
+    height: 7px; /* Thu nhỏ kích thước indicator cho màn hình từ 768px đến 991.98px */
+  }
+  .flash-sales__content .item {
+    width: 180px;
+    height: 340px;
+    margin: 15px;
+  }
+  .flash-sales__content .item img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+  }
+  .flash-sales__content .item .icon {
+    width: 180px;
+  }
+  .flash-sales__content .item .detail .title {
+    font-size: 1.4rem;
+  }
+  .flash-sales__content .item .detail .price .origin-price {
+    font-size: 1.2rem;
+  }
+  .flash-sales__content .item .detail .price .sale-price {
+    font-size: 1.4rem;
+  }
+  .flash-sales__content {
+    padding-bottom: 30px;
+  }
   /* 6 .corevalue */
   .corevalue .item .icon {
     height: 50px;
@@ -186,108 +196,59 @@
     font-size: 35px;
     padding: 5px;
   }
-
   .corevalue .item .text {
     text-align: left;
     padding-top: 10px;
     margin-left: 10px;
   }
-
   /* 7. .footer */
   .footer {
     padding: 60px 0;
   }
-
   .footer h1 {
     font-size: 1.6rem;
   }
-
   .footer .title {
     font-size: 1.4rem;
   }
-
   .footer .desc {
     font-size: 1.2rem;
   }
-
-  .flash-sales__content {
-    padding-bottom: 30px;
-  }
 }
-
-/* Mobile */
 @media (max-width: 767.98px) {
   .second-content__search-button {
     width: 40%;
   }
-
   .second-content__search {
     width: 100%;
     height: 30px;
     min-width: 350px;
     padding: 0 10%;
   }
-
-  /* 2 .hero */
-  .prev-slide {
-    height: 200px;
-  }
-
-  .next-slide {
-    height: 200px;
-  }
-
-  .slide-container {
-    margin-top: 0;
-  }
-
-  ul.slides {
-    height: 200px;
-  }
-
-  .slide-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-
-  .carousel-controls {
-    font-size: 40px;
-  }
-
-  .carousel-dots .carousel-dot {
-    width: 10px;
-    height: 10px;
-  }
-
   /* 3 .ads */
   .main .ads {
     margin-top: 5px;
   }
-
   .ads img {
     border-radius: 7px;
   }
-
   /* 5 .quick__advertise */
   .scroll-button.left {
     left: 5px;
   }
-
   .scroll-button.right {
     right: 5px;
   }
-
   .quick-sales .item {
     width: 150px;
     height: 80px;
   }
-
   .quick-sales .item img {
     height: 80px;
   }
-
+  .flash-sales .top {
+    padding: 0;
+  }
   /* 6. .flash-sales */
   .flash-sales .top .timer strong {
     color: #fff;
@@ -299,12 +260,42 @@
     justify-content: center;
     align-items: center;
   }
-
   .flash-sales .top h3 {
     font-size: 1.6rem;
     color: #fc521d;
   }
-
+  .flash-sales__content .item {
+    width: 180px;
+    height: 340px;
+    margin: 15px;
+  }
+  .flash-sales__content .item img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+  }
+  .flash-sales__content .item .icon {
+    width: 180px;
+  }
+  .flash-sales__content .item .detail .title {
+    font-size: 1.4rem;
+  }
+  .flash-sales__content .item .detail .price .origin-price {
+    font-size: 1.2rem;
+  }
+  .flash-sales__content .item .detail .price .sale-price {
+    font-size: 1.4rem;
+  }
+  .hero .carousel .carousel-track-container {
+    height: 40vh; /* Giảm chiều cao cho mobile */
+  }
+  .hero .carousel .carousel-button {
+    font-size: 1.2rem; /* Giảm thêm kích thước font cho nút điều khiển */
+  }
+  .hero .carousel .carousel-indicator {
+    width: 6px;
+    height: 6px; /* Thu nhỏ kích thước indicator cho mobile */
+  }
   /* 7 .list-item */
   .list-item {
     display: flex;
@@ -313,50 +304,43 @@
     gap: 10px;
     align-items: center;
   }
-
   /* 8 .corevalue */
   .corevalue {
     display: flex;
     justify-content: center;
     padding: 0 5px;
   }
-
   .corevalue .item .icon {
     height: 20px;
     width: 20px;
     font-size: 15px;
   }
-
   .corevalue .item .text {
     text-align: left;
     padding-top: 10px;
     margin-left: 10px;
   }
-
   .main-contain .row {
     display: flex;
     flex-direction: column;
   }
-
   /* 9 .footer */
   .footer .row .column {
     width: 100%;
     text-align: center;
   }
-
   .footer .row .column .line {
     display: none;
   }
-
   .footer .row .column:first-child {
     width: 100%;
   }
-
   .footer .desc-h1 {
     padding-right: 0;
   }
-
   .flash-sales__content {
     padding-bottom: 20px;
   }
 }
+
+/*# sourceMappingURL=responsive.css.map */
